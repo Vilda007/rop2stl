@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "katalog": "ropiky.net — databáze LO (pramen pro ŘOP katalog)",
+    "poznamka": "Kompletní databáze všech LO objektů ČSR 1936-38: 9 armádních sborů + ZVV Praha/Brno/Bratislava. Kódování windows-1250. Navigace onclick JS (ne href). Žádná session nutná — vše veřejné.",
+    "struktura": {
+      "uroven_1": "dbase_sbor.php?sbor=<1|2|3|4|6|7|B|P|S> — seznam stavebních úseků sboru (tabulka: úsek, prostor, počet objektů, datum zadání, stavební firma, velitel dozoru, statistiky zad/vyb/zap)",
+      "uroven_2": "dbase_usek.php?id=<ID> — tabulka objektů úseku (sled, číslo, TYP např. A-160/B2-90/D1, odolnost Z/N/-, nadm. výška, datum betonáže, krych. pevnost, stav 1938, stav dnes, poznámka); + navigační buňky na sousední úseky",
+      "uroven_3": "dbase_objekt.php?id=<ID> — karta objektu: plné označení (např. A-1/1/B2-90Z), sbor, úsek, typ; střílny (vlevo/vchodová/čelní) s typem (normální/zeslabená/depresní), lafeta 38 ano/ne, číslování ŘOP/ŘOP staré/Německé, výrobce lafety (Bächer/MO/Třinec/Vítkovice/ZB), odolnost, výškový rozdíl střílen, ventilace výdech, n.m. výška, kabelový vstup, datum betonáže, zárubně (R-239/R-444a), krychelná pevnost (400 kg/cm²), žlábky chlazení, inundační šachta, stav 1938 (postaven), dnešní stav (zničen/zahlazen), zához, PAO, fotodokumentace, GPS WGS-84"
+    },
+    "scrape_plan": "Per sbor: dbase_sbor → per úsek: dbase_usek (objekt řádky + ID z onclick) → per objekt: dbase_objekt karta. ID jsou hashová čísla (např. 1075718531) — mapování přes onclick regex. Typová označení objektů (A-160, B2-90Z, atyp…) = přímý vstup pro katalog variant.",
+    "ukazka": {
+      "A-1_1_B2-90Z": {
+        "id": 1075718531,
+        "usek": "A-1 (Velvary), I. sbor",
+        "typ": "B2-90",
+        "odolnost": "zesílený (Z)",
+        "strielna_vlevo": "normální",
+        "lafeta_38": "ne",
+        "vyrobce_lafety": "Bächer",
+        "nm_vyska": 173,
+        "datum_betonaze": "15.11.1937",
+        "krych_pevnost": "400 kg/cm²",
+        "stav_1938": "postaven",
+        "stav_dnes": "zničen",
+        "gps": "50,30941 N / 14,33014 E"
+      }
+    },
+    "KST_archiv": "Dříve ověřeno: dobové výkresy PDF na www.ropiky.net/_KST/... (přílohy stavební dokumentace, scany). Hledání přes web_search site:ropiky.net Pril pdf; parsuj přes pdftoppm + view_image."
+  }
+}
