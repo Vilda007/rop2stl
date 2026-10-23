@@ -1,0 +1,29 @@
+{
+  "rok_typu": 1937,
+  "vzor": 37,
+  "typ": "A-180",
+  "zdroj": "Denkschrift über die tschecho-slowakische Landesbefestigung (OKH 1941), scan via ropiky.cz/img/typologie/denkschrift/lo37-typ-a.jpg",
+  "provedeni_default": "normal",
+  "variants": {
+    "A-120": {"celkova_sirka_tyl": 7.70},
+    "A-140": {"celkova_sirka_tyl": 6.95},
+    "A-160": {"celkova_sirka_tyl": 7.40},
+    "A-180": {"celkova_sirka_tyl": 8.70},
+    "A-200": {"celkova_sirka_tyl": 8.40},
+    "A-220": {"celkova_sirka_tyl": 8.70}
+  },
+  "spolecne": {
+    "celkova_hloubka": 3.45,
+    "tlouctka_celni_steny": 0.80,
+    "tlouctka_boce_steny": 0.60,
+    "hloubka_vnitrni_komory": 2.15,
+    "sirka_vchodu": 0.65,
+    "uhel_strielny_shaft": 60
+  },
+  "poznamka": "Rozměry z Denkschrift scanu (view_image extrakce 23.10.2026). Šířky týlní stěny dle varianty A-120..A-220. Úhel 180° = rozevření os střílen pro A-180 (typové označení). Pro přesné validace doplnit z KST archivu ropiky.net a FORTprint literatury.",
+  "provedeni": {
+    "zeslabene": {"strop": 0.60, "stena": 0.60},
+    "normal": {"strop": 0.80, "stena": 0.80},
+    "zesilene": {"strop": 1.20, "stena": 1.00}
+  }
+}
