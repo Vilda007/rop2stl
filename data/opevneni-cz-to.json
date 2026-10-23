@@ -1,0 +1,861 @@
+{
+ "451": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 1a",
+  "typ": "Izolovaný pěchotní srub pravostranný",
+  "odolnost": "II",
+  "napojen_na": "KK 3421 / B",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "7990",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "7991",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "7992",
+    "nazev": "Řez I-I, II-II"
+   },
+   {
+    "id": "8316",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8317",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8318",
+    "nazev": "Řez I-I, II-II"
+   },
+   {
+    "id": "11693",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11694",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T1a",
+  "id": 451
+ },
+ "452": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 1b",
+  "typ": "Izolovaný pěchotní srub levostranný",
+  "odolnost": "II",
+  "napojen_na": "KK 3421 / B",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "8319",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8320",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8321",
+    "nazev": "Řez I-I, II-II"
+   },
+   {
+    "id": "11695",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11696",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T1b",
+  "id": 452
+ },
+ "453": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 2",
+  "typ": "Izolovaný pěchotní srub oboustranný",
+  "odolnost": "II",
+  "napojen_na": "",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "8322",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8323",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8324",
+    "nazev": "Pohledy"
+   },
+   {
+    "id": "8325",
+    "nazev": "Řez I-I, II-II"
+   },
+   {
+    "id": "11697",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11698",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T2",
+  "id": 453
+ },
+ "454": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Zru en",
+  "jmeno": "T-S 3",
+  "typ": "Izolovaný pěchotní srub pravostranný",
+  "odolnost": "2",
+  "napojen_na": "",
+  "tvrz": "",
+  "id": 454
+ },
+ "455": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 4",
+  "typ": "Izolovaný pěchotní srub oboustranný",
+  "odolnost": "II",
+  "napojen_na": "",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "8326",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8327",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8328",
+    "nazev": "Řez I-I, II-II"
+   },
+   {
+    "id": "11699",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11700",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T4",
+  "id": 455
+ },
+ "456": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 5",
+  "typ": "Izolovaný pěchotní srub oboustranný",
+  "odolnost": "II",
+  "napojen_na": "KK 3821 / B",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "7995",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "7996",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8723",
+    "nazev": "Řez I-I, II-II"
+   },
+   {
+    "id": "11701",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11702",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T5",
+  "id": 456
+ },
+ "457": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 6",
+  "typ": "Izolovaný pěchotní srub oboustranný",
+  "odolnost": "II",
+  "napojen_na": "KK 3822 / B",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "8000",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8001",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8724",
+    "nazev": "Řez I-I, II-II, III-III"
+   },
+   {
+    "id": "11703",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11704",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T6",
+  "id": 457
+ },
+ "458": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Zbečník",
+  "Stav": "Postaven",
+  "jmeno": "T-S 7",
+  "typ": "Izolovaný pěchotní srub oboustranný",
+  "odolnost": "III",
+  "napojen_na": "KK 3822 / B",
+  "tvrz": "",
+  "vykresy": [
+   {
+    "id": "8329",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8330",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8725",
+    "nazev": "Řez I-I, II-II, III-III"
+   },
+   {
+    "id": "11705",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "11706",
+    "nazev": "Dolní patro"
+   }
+  ],
+  "gps_wpt": "T7",
+  "id": 458
+ },
+ "459": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 8",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8707",
+    "nazev": "Podzemí"
+   },
+   {
+    "id": "8726",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8731",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8732",
+    "nazev": "Řez I-I, II-II, III-III"
+   }
+  ],
+  "gps_wpt": "T8",
+  "id": 459
+ },
+ "460": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 9",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8708",
+    "nazev": "Podzemí"
+   },
+   {
+    "id": "8733",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8734",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8735",
+    "nazev": "Řez I-I, II-II, III-III"
+   }
+  ],
+  "gps_wpt": "T9",
+  "id": 460
+ },
+ "461": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 10",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8705",
+    "nazev": "Podzemí"
+   },
+   {
+    "id": "8736",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8737",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8738",
+    "nazev": "Řez I-I, II-II, III-III"
+   }
+  ],
+  "gps_wpt": "T10",
+  "id": 461
+ },
+ "462": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 11",
+  "typ": "Tvrzová dělostřelecká otočná věž",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8739",
+    "nazev": "Řez I-I"
+   },
+   {
+    "id": "8740",
+    "nazev": "Řez II-II"
+   },
+   {
+    "id": "8741",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8742",
+    "nazev": "Horní patro"
+   }
+  ],
+  "gps_wpt": "T11",
+  "id": 462
+ },
+ "463": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 12",
+  "typ": "Tvrzový dělostřelecký srub",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8743",
+    "nazev": "Horní patro, Dolní patro, Řezy I-I, II-II, III-III, IV-IV"
+   }
+  ],
+  "gps_wpt": "T12",
+  "id": 463
+ },
+ "464": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 13",
+  "typ": "Tvrzový dělostřelecký srub",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8744",
+    "nazev": "Horní patro, Dolní patro"
+   },
+   {
+    "id": "8745",
+    "nazev": "Řez I-I, II-II, III-III, IV-IV"
+   }
+  ],
+  "gps_wpt": "T13",
+  "id": 464
+ },
+ "465": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 14",
+  "typ": "Tvrzová otočná minometná věž",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "gps_wpt": "T14",
+  "id": 465
+ },
+ "466": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 14a",
+  "typ": "Tvrzový vchodový objekt",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8746",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8747",
+    "nazev": "Horní patro, Řezy A-A, B-B, C-C, D-D"
+   },
+   {
+    "id": "8748",
+    "nazev": "Řez I-I"
+   }
+  ],
+  "gps_wpt": "T14a",
+  "id": 466
+ },
+ "467": {
+  "Úsek": "ŽSV V. Náchod",
+  "Podúsek": "Jírová hora",
+  "Stav": "Nezad n",
+  "jmeno": "T-JH-S 15",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Jírová hora",
+  "vykresy": [
+   {
+    "id": "8706",
+    "nazev": "Podzemí"
+   },
+   {
+    "id": "8749",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "8750",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "8751",
+    "nazev": "Řez I-I"
+   },
+   {
+    "id": "8752",
+    "nazev": "Řez II-II"
+   },
+   {
+    "id": "8753",
+    "nazev": "Řez III-III"
+   }
+  ],
+  "gps_wpt": "T15",
+  "id": 467
+ },
+ "499": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 45",
+  "typ": "Tvrzový pěchotní srub pravostranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "8949",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12488",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "12489",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12490",
+    "nazev": "Řez I-I"
+   },
+   {
+    "id": "12491",
+    "nazev": "Řez II-II, IV-IV"
+   },
+   {
+    "id": "12492",
+    "nazev": "Řez III-III"
+   }
+  ],
+  "gps_wpt": "T45",
+  "id": 499
+ },
+ "501": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 47",
+  "typ": "Tvrzový pěchotní srub levostranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "8951",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12498",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "12499",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12500",
+    "nazev": "Řez I-I, II-II"
+   }
+  ],
+  "gps_wpt": "T47",
+  "id": 501
+ },
+ "503": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 49",
+  "typ": "Tvrzový dělostřelecký srub",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "12506",
+    "nazev": "Dolní patro, Řez IV-IV"
+   },
+   {
+    "id": "12507",
+    "nazev": "Horní patro, Řez III-III"
+   },
+   {
+    "id": "12508",
+    "nazev": "Řez I-I"
+   },
+   {
+    "id": "12509",
+    "nazev": "Řez II-II"
+   }
+  ],
+  "gps_wpt": "T49",
+  "id": 503
+ },
+ "504": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 49a",
+  "typ": "Tvrzový dělostřelecký srub",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "12510",
+    "nazev": "Horní a dolní patro"
+   },
+   {
+    "id": "12511",
+    "nazev": "Řez I-I, V-V"
+   },
+   {
+    "id": "12512",
+    "nazev": "Řez II-II"
+   },
+   {
+    "id": "12513",
+    "nazev": "Řez III-III, IV-IV"
+   }
+  ],
+  "gps_wpt": "T49a",
+  "id": 504
+ },
+ "505": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 50",
+  "typ": "Tvrzová otočná minometná věž",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "gps_wpt": "T50",
+  "id": 505
+ },
+ "506": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 50a",
+  "typ": "Tvrzový vchodový objekt",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "12514",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "12515",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12526",
+    "nazev": "Řez I-I, II-II, III-III, C-D"
+   }
+  ],
+  "gps_wpt": "T50a",
+  "id": 506
+ },
+ "507": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 51",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "8952",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12517",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "12518",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12519",
+    "nazev": "Řez I-I, III-III"
+   },
+   {
+    "id": "12520",
+    "nazev": "Řez II-II"
+   }
+  ],
+  "gps_wpt": "T51",
+  "id": 507
+ },
+ "508": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Poustka",
+  "Stav": "Nezad n",
+  "jmeno": "T-Pa-S 52a",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Poustka",
+  "vykresy": [
+   {
+    "id": "8953",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12521",
+    "nazev": "Dolní patro"
+   },
+   {
+    "id": "12522",
+    "nazev": "Horní patro"
+   },
+   {
+    "id": "12523",
+    "nazev": "Řez I-I"
+   },
+   {
+    "id": "12524",
+    "nazev": "Řez II-II"
+   },
+   {
+    "id": "12525",
+    "nazev": "Řez III-III"
+   }
+  ],
+  "gps_wpt": "T52a",
+  "id": 508
+ },
+ "529": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Deska / V kop",
+  "jmeno": "T-St-S 71",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T71",
+  "id": 529
+ },
+ "530": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Deska / V kop",
+  "jmeno": "T-St-S 72",
+  "typ": "Tvrzový pěchotní srub pravostranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T72",
+  "id": 530
+ },
+ "531": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Postaven",
+  "jmeno": "T-St-S 73",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T73",
+  "id": 531
+ },
+ "532": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Deska / V kop",
+  "jmeno": "T-St-S 74",
+  "typ": "Tvrzový pěchotní srub oboustranný",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T74",
+  "id": 532
+ },
+ "533": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Deska / V kop",
+  "jmeno": "T-St-S 75",
+  "typ": "Tvrzová dělostřelecká otočná věž",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T75",
+  "id": 533
+ },
+ "534": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Deska / V kop",
+  "jmeno": "T-St-S 76",
+  "typ": "Tvrzová dělostřelecká otočná věž",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T76",
+  "id": 534
+ },
+ "535": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Nezad n",
+  "jmeno": "T-St-S 76a",
+  "typ": "Izolovaná dělostřelecká pozorovatelna",
+  "odolnost": "III",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T76a",
+  "id": 535
+ },
+ "536": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Deska / V kop",
+  "jmeno": "T-St-S 77",
+  "typ": "Tvrzový dělostřelecký srub",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T77",
+  "id": 536
+ },
+ "537": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Nepostaven",
+  "jmeno": "T-St-S 78",
+  "typ": "Tvrzový dělostřelecký srub",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T78",
+  "id": 537
+ },
+ "538": {
+  "Úsek": "ŽSV VI. Trutnov",
+  "Podúsek": "Stachelberg",
+  "Stav": "Nezad n",
+  "jmeno": "T-St-S 79",
+  "typ": "Tvrzová otočná minometná věž",
+  "odolnost": "IV",
+  "napojen_na": "",
+  "tvrz": "Stachelberg",
+  "gps_wpt": "T79",
+  "id": 538
+ }
+}
