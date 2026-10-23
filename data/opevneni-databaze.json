@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "katalog": "opevneni.cz — E-Databáze TO (pramen pro ŘOP katalog)",
+    "pristup": "ASP session: warm-up sekvence (homepage → main.asp → header/outlookb/left/novinky/right.asp s cookies) → pak itemPS.asp?id=N funguje (200, 34 kB). Fulltext: POST search-ft.asp (fulltext=<jméno>&si=PS), max 10 výsledků/stránka. Výkresy: Zoomify viewer — /asp/vykres.asp?id=<IDO>, dlaždice přes zimage.asp?nc=<imagePath>&tg=<n>&fn=<tier>-<col>-<row>.jpg; thumbs: /images/vykresy/thumbs/<IDO>.jpg.",
+    "obsah": "Výkresy: 1186 záznamů (půdorysy dolní/horní patro, řezy I-I/II-II/III-III/C-D), 3D modely: 249, Fotobáze: 10 505 fotek",
+    "struktura_karty_objektu": "ID, jméno (např. T-Pa-S 50a), úsek ŽSV, podúsek, typ (např. Tvrzový vchodový objekt), odolnost (IV), azimuty střílen, terén, n.m. výška, osádka, ventilace, objem betonu, GPS WGS-84/S-42/S-JTSK, poznámka, výkresy (IDs), fotografie, konstrukce, literatura, kontakty, inet odkazy",
+    "pruvodci_zapis": "windows-1250 kódování! Frameset web (2002-2005 SOSsoft), copyright Michal Hrdlička — při použití dat citovat zdroj."
+  },
+  "ukazka_objektu": {
+    "T-Pa-S_50a": {
+      "id": 506,
+      "typ": "Tvrzový vchodový objekt",
+      "odolnost": "IV",
+      "tvrz": "Poustka",
+      "usek": "ŽSV VI. Trutnov",
+      "teren": "Lomený",
+      "nm_vyska": 553,
+      "osadka": 25,
+      "ventilace": "M2",
+      "objem_betonu": "nezadán",
+      "gps_wgs84": "50,58454° N / 16,00389° E",
+      "vykresy_ids": [12514, 12515, 12526],
+      "vykresy_nazvy": ["Dolní patro", "Horní patro", "Řez I-I, II-II, III-III, C-D"]
+    }
+  }
+}
