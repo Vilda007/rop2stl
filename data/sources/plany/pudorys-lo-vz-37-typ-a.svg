@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="Georgia, serif" font-size="12">
+  <style>
+    .bg { fill: #F4EFE6; }
+    .wall { fill: #8B5A3C; stroke: #3E2A1F; stroke-width: 1.5; }
+    .inner { fill: #E8DDC7; stroke: #8B5A3C; stroke-width: 1; }
+    .streilna { fill: #3E2A1F; stroke: none; }
+    .label { fill: #2A2522; font-size: 11px; }
+    .title { fill: #3E2A1F; font-size: 16px; font-weight: bold; }
+    .dim { fill: #5A6B4F; font-size: 10px; font-style: italic; }
+    .arrow { stroke: #7A3B2E; stroke-width: 1.5; fill: none; marker-end: url(#ar); }
+    .north { fill: #5A6B4F; font-size: 10px; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7A3B2E"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="600" height="380"/>
+  <text class="title" x="20" y="28">LO vz. 37 — typ A (oboustranný)</text>
+  <text class="dim" x="20" y="46">Půdorys základní varianty — dvě boční střílny pro těžké kulomety, posádka 7 mužů</text>
+
+  <!-- Vnější obrys řopíku (lichoběžník) -->
+  <polygon class="wall" points="150,100 450,100 420,290 180,290" />
+  <!-- Vnitřní dutina -->
+  <polygon class="inner" points="180,130 420,130 395,265 205,265" />
+
+  <!-- Levá střelecká místnost -->
+  <rect class="inner" x="195" y="140" width="80" height="70" fill="#F4EFE6" stroke="#8B5A3C"/>
+  <text class="label" x="210" y="180" >Střel. místnost</text>
+  <text class="label" x="225" y="194" >(levá)</text>
+
+  <!-- Pravá střelecká místnost -->
+  <rect class="inner" x="325" y="140" width="80" height="70" fill="#F4EFE6" stroke="#8B5A3C"/>
+  <text class="label" x="340" y="180" >Střel. místnost</text>
+  <text class="label" x="352" y="194" >(pravá)</text>
+
+  <!-- Chodba -->
+  <rect class="inner" x="240" y="220" width="120" height="40" fill="#F4EFE6" stroke="#8B5A3C"/>
+  <text class="label" x="270" y="245">Vstupní chodba</text>
+
+  <!-- Vchod -->
+  <rect class="wall" x="280" y="260" width="40" height="30"/>
+  <text class="label" x="285" y="282" fill="#F4EFE6">Vchod</text>
+
+  <!-- Střílny (boční) -->
+  <rect class="streilna" x="150" y="160" width="8" height="18"/>
+  <rect class="streilna" x="442" y="160" width="8" height="18"/>
+
+  <!-- Palebné směry -->
+  <path class="arrow" d="M 150 169 L 70 140"/>
+  <path class="arrow" d="M 150 169 L 70 200"/>
+  <path class="arrow" d="M 450 169 L 530 140"/>
+  <path class="arrow" d="M 450 169 L 530 200"/>
+
+  <text class="dim" x="20" y="140">boční palba ←</text>
+  <text class="dim" x="510" y="140">→ boční palba</text>
+
+  <!-- Rozměry -->
+  <line x1="150" y1="310" x2="450" y2="310" stroke="#2A2522" stroke-dasharray="3,3"/>
+  <text class="dim" x="280" y="325">8,0–10,5 m</text>
+
+  <line x1="470" y1="100" x2="470" y2="290" stroke="#2A2522" stroke-dasharray="3,3"/>
+  <text class="dim" x="480" y="200">6,5 m</text>
+
+  <!-- Severka -->
+  <circle cx="560" cy="340" r="18" fill="none" stroke="#5A6B4F" stroke-width="1"/>
+  <text class="north" x="555" y="345">S</text>
+  <path d="M 560 322 L 560 358" stroke="#5A6B4F"/>
+  <path d="M 555 328 L 560 322 L 565 328" fill="none" stroke="#5A6B4F"/>
+
+  <!-- Legenda -->
+  <rect x="20" y="335" width="20" height="14" class="wall"/>
+  <text class="label" x="48" y="346">stěna 80 cm (III. stupeň)</text>
+  <rect x="220" y="335" width="20" height="14" fill="#F4EFE6" stroke="#8B5A3C"/>
+  <text class="label" x="248" y="346">místnosti</text>
+  <rect x="340" y="335" width="10" height="14" class="streilna"/>
+  <text class="label" x="358" y="346">střílna (lafeta M, kulomet vz. 37)</text>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "katalog": "LO vz. 36",
+    "zdroj": "ropiky.cz/typologie/lo-vz-36 (text: stupně I/II) + pudorys-lo-vz-36.svg (schéma bez kot)",
+    "poznamka": "První sériový typ LO (1936-37), 864 postaveno. Typ A (~70 %): 2 čelní střílny, 4 muži; Typ B: 1 čelní + 1 boční. Vchod vzadu. Čelní palba (ne boční!) — proto nahrazen vz. 37."
+  },
+  "typy": {
+    "A": {"popis": "2 čelní střílny, posádka 4", "podil_procenta": 70},
+    "B": {"popis": "1 čelní + 1 boční střílna, posádka 4"}
+  },
+  "provedeni": {
+    "I": {"stena": 0.50, "strop": 0.60, "odolnost": "8 cm granát"},
+    "II": {"stena": 0.60, "strop": 0.80, "odolnost": "10 cm granát"}
+  },
+  "srovnani_vz37": {
+    "vz36_stena_max": 0.60, "vz37_stena_max": 0.80,
+    "vz36_strop_max": 0.80, "vz37_strop_max": 1.00,
+    "vz36_pancerove_dvere": "ne", "vz37_pancerove_dvere": "ano",
+    "vz36_ochrana_plynu": "ne", "vz37_ochrana_plynu": "ano (filtroventilace)",
+    "vz36_postaveno": 864, "vz37_postaveno": 9632
+  },
+  "TODO": "Půdorysné rozměry (délka × šířka obdélníku s vypouleným čelem): dohledat KST výkresy vz. 36 (ropiky.net má ZVV Praha/Brno/Bratislava sekce). ZVV Brno objekty mají specifika."
+}

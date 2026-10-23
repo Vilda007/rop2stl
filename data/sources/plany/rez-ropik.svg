@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Georgia, serif" font-size="12">
+  <style>
+    .bg { fill: #F4EFE6; }
+    .sky { fill: #EDE5D4; }
+    .terrain { fill: #D9D0BE; stroke: #8B7355; }
+    .wall { fill: #5A4632; stroke: #2A2522; stroke-width: 1.5; }
+    .armor { fill: #2A2522; stroke: #000; stroke-width: 1; }
+    .inner { fill: #F4EFE6; stroke: #5A4632; stroke-width: 1; }
+    .label { fill: #2A2522; font-size: 11px; }
+    .title { fill: #3E2A1F; font-size: 16px; font-weight: bold; }
+    .callout { fill: #7A3B2E; font-size: 11px; font-weight: bold; }
+    .dim { fill: #5A6B4F; font-size: 10px; font-style: italic; }
+    .line { stroke: #7A3B2E; stroke-width: 1; fill: none; }
+  </style>
+
+  <rect class="bg" width="800" height="420"/>
+  <text class="title" x="20" y="28">Řez řopíkem (LO vz. 37 typ A)</text>
+  <text class="dim" x="20" y="46">Pohled zboku — zahloubení v terénu, maskovací zeměnina, ocelolitinová střílna</text>
+
+  <!-- Nebe -->
+  <rect class="sky" x="0" y="60" width="800" height="160"/>
+
+  <!-- Terén s maskovací hlínou -->
+  <path class="terrain" d="M 0 220 L 200 220 Q 240 190 280 185 L 520 185 Q 560 190 600 220 L 800 220 L 800 420 L 0 420 Z"/>
+
+  <!-- Řopík — tělo -->
+  <rect class="wall" x="240" y="200" width="320" height="150"/>
+  <rect class="inner" x="260" y="230" width="280" height="100"/>
+
+  <!-- Strop (zesílený) — horizontální -->
+  <rect class="wall" x="240" y="190" width="320" height="20"/>
+
+  <!-- Střílny (boční) — znázorněné jako výřezy ve stěně -->
+  <rect class="armor" x="234" y="240" width="12" height="30"/>
+  <rect class="armor" x="554" y="240" width="12" height="30"/>
+
+  <!-- Palebné linie (boční palba, paralelně s terénem) -->
+  <line class="line" x1="235" y1="255" x2="130" y2="255"/>
+  <line class="line" x1="565" y1="255" x2="670" y2="255"/>
+
+  <!-- Místnosti -->
+  <rect class="inner" x="275" y="245" width="80" height="75" stroke="#8B5A3C"/>
+  <text class="label" x="285" y="285">Střelecká</text>
+  <text class="label" x="290" y="298">místnost</text>
+  <text class="label" x="295" y="311">(levá)</text>
+
+  <rect class="inner" x="445" y="245" width="80" height="75" stroke="#8B5A3C"/>
+  <text class="label" x="455" y="285">Střelecká</text>
+  <text class="label" x="460" y="298">místnost</text>
+  <text class="label" x="465" y="311">(pravá)</text>
+
+  <!-- Chodba + vstup -->
+  <rect class="inner" x="360" y="260" width="80" height="60" stroke="#8B5A3C"/>
+  <text class="label" x="370" y="285">Chodba</text>
+  <text class="label" x="370" y="300">+ ubikace</text>
+
+  <!-- Vstupní šachta -->
+  <rect class="wall" x="390" y="330" width="22" height="30"/>
+  <text class="label" x="418" y="348">šachta vchodu</text>
+
+  <!-- Odvětrávací komínek -->
+  <rect class="wall" x="470" y="175" width="12" height="18"/>
+  <text class="callout" x="490" y="180">komínek — odvod prachových plynů ze zbraní</text>
+  <line class="line" x1="486" y1="178" x2="440" y2="200" stroke-dasharray="2,2"/>
+
+  <!-- Popisky - callouts -->
+  <text class="callout" x="580" y="200">maskovací zeměnina</text>
+  <line class="line" x1="580" y1="205" x2="540" y2="210" stroke-dasharray="2,2"/>
+
+  <text class="callout" x="20" y="200">terén</text>
+
+  <text class="callout" x="20" y="255">← boční palba</text>
+  <text class="callout" x="670" y="255">boční palba →</text>
+
+  <text class="callout" x="580" y="275">ocelolitinová</text>
+  <text class="callout" x="580" y="288">střílna (lafeta M)</text>
+  <line class="line" x1="578" y1="282" x2="566" y2="255" stroke-dasharray="2,2"/>
+
+  <text class="callout" x="130" y="375">betonový</text>
+  <text class="callout" x="130" y="388">věnec stěny</text>
+  <line class="line" x1="170" y1="380" x2="245" y2="340" stroke-dasharray="2,2"/>
+
+  <text class="callout" x="660" y="365">vstup ze zadní strany</text>
+  <text class="callout" x="660" y="378">chráněn proti odstřelu</text>
+
+  <!-- Rozměry -->
+  <line x1="240" y1="380" x2="560" y2="380" stroke="#2A2522" stroke-dasharray="3,3"/>
+  <text class="dim" x="380" y="395">8,0 m</text>
+  <line x1="580" y1="200" x2="580" y2="350" stroke="#2A2522" stroke-dasharray="3,3"/>
+  <text class="dim" x="590" y="280">2,5 m</text>
+</svg>

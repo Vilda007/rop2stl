@@ -1,0 +1,123 @@
+{
+ "_meta": {
+  "katalog": "TO — těžké objekty (přehled)",
+  "zdroj": "ropiky.cz typologie (12 kategorií, scrape 23.10.2026) + denkschrift scany + SVG schémata",
+  "poznamka": "TO = pěchotní sruby, dělostřelecké sruby/věže/tvrze, kopule, zvony, vchodové objekty. Pro 3D tisk katalogu: relevantní jsou vnější půdorysy + odolnostní stupně; vnitřní struktura (podlaží, šachty) až ve fáze detail."
+ },
+ "kategorie": {
+  "pechotni-srub": {
+   "popis": "Páteř těžkého opevnění; 6 stupňů odolnosti (1,2, arab, I, II, III, IV — viz schema-odolnosti)",
+   "rozestup_linie": "600-800 m (max 1200)",
+   "odolnosti": {
+    "1": {
+     "typ": "malý (arab)",
+     "proti": "155 mm, 1 zásah",
+     "stena_m": 1.5,
+     "strop_m": 1.5,
+     "pancir_mm": "80-120"
+    },
+    "2": {
+     "typ": "malý (arab)",
+     "proti": "210 mm, 1 zásah",
+     "stena_m": 1.75,
+     "strop_m": 1.75,
+     "pancir_mm": "100-130",
+     "poznamka": "stena/strop 1,75 doplnit ověřením (mezistupeň)"
+    },
+    "I": {
+     "typ": "velký (říman)",
+     "proti": "210 mm"
+    },
+    "II": {
+     "typ": "velký (říman)",
+     "proti": "240 mm, 2 zásahy",
+     "stena_m": 2.25,
+     "strop_m": 2.0,
+     "pancir_mm": "120-150"
+    },
+    "III": {
+     "typ": "velký (říman)",
+     "proti": "300 mm, 2 zásahy"
+    },
+    "IV": {
+     "typ": "velký (říman)",
+     "proti": "nejvyšší — dělostřelecké objekty",
+     "stena_m": 3.5,
+     "strop_m": 2.5,
+     "viz": "delostrelecka-vez-ro"
+    }
+   },
+   "imgs": [
+    "denkschrift/pechotni-srub-dvoupatr.jpg",
+    "denkschrift/pechotni-srub-oboustr.jpg",
+    "pudorys-pechotni-srub.svg"
+   ],
+   "zdroj_odolnosti": "schema-odolnosti-srubu.svg + pechotni-srub.html tabulka"
+  },
+  "delostrelecky-srub": {
+   "popis": "TO tvrzový, 2 (výj. 3) podlaží; 6 postaveno",
+   "delka": 48,
+   "spotreba_betonu_m3": 5500,
+   "odolnost": "IV. stupeň",
+   "vyzbroj": "3× 10cm houfnice vz. 38 (plánováno, nedodáno)"
+  },
+  "delostrelecka-vez-ro": {
+   "popis": "Otočná dělostřelecká věž, odolnost IV, dvojče 10cm houfnic",
+   "obvodove_steny": 3.5,
+   "vytahova_sachta": "365 × 455 cm, výtah Vý III 2500 kg",
+   "schodiste": "šířka 80 cm, 99 stupňů",
+   "cena": "6 675 000 Kčs"
+  },
+  "delostrelecka-pozorovatelna": {
+   "popis": "Pozorovatelna tvrze",
+   "odolnost_v": {
+    "ohrozena_stena": 2.75,
+    "strop": 2.5,
+    "pancir": "180-200 mm",
+    "proti": "300 mm"
+   }
+  },
+  "delostrelecka-tvrz": {
+   "popis": "5 postaveno; sestava: vchodový objekt + dělostřelecké sruby + RO věž + pozorovatelny + pěch. sruby; podzemí 14-18 m (IV. st. ve skále 14 m)",
+   "imgs": [
+    "schema-tvrz.svg"
+   ]
+  },
+  "vchodovy-objekt": {
+   "popis": "Týlová strana, 400-1200 m od čela (Poustka 200 m, Šibenice 1450 m)",
+   "mrizova_vrata": "⌀38 mm trubky, křídlo ~240 kg",
+   "pancerova_vrata": "4 t, 40 mm plech",
+   "granatova_vrata": "30 mm, 600 kg"
+  },
+  "kulometna-vez-or": {
+   "popis": "Kulometná věž OR — MALÉ množství postaveno",
+   "dims_dostupne": [
+    "30 cm (stěna)",
+    "305 mm"
+   ],
+   "TODO": "Kompletní půdorys/rozměry dohledat (Denkschrift TO díly / KST)"
+  },
+  "minometna-kopule-g-ja": {
+   "popis": "G/JA dvojče 12cm minometů B-12 (0 vyrobeno, 154,5 t předpancíř)",
+   "predpancir_t": 154.5
+  },
+  "kopule-pozorovaci": {
+   "popis": "Pozorovací kopule (typy dle odolnosti: 1-2 pro araby 15cm, M/S pro I. 20cm, V pro III., W pro tvrze 30cm stěna)",
+   "prumer_vnitrni": {
+    "JA/M": 1.5,
+    "DZ-33": 1.3
+   },
+   "imgs": []
+  },
+  "pancerovy-zvon": {
+   "popis": "Ocelový odlitek, 1-2 muži, TK/LK; zapuštěný do stropní desky",
+   "prumer": "1,80-2,20 m",
+   "vyska": 1.0,
+   "tloucka_steny": "20-30 cm dle odolnosti (80-120 mm I. st.)",
+   "imgs": [
+    "rez-pancerovy-zvon.svg"
+   ]
+  }
+ },
+ "TODO": "Pěchotní srub odolnosti III/IV doplnit ze schema-odolnosti-srubu.svg textů; LO vz. 38 (BŘezinky, pozorovatelny) a plánované typy doplnit samostatně."
+}

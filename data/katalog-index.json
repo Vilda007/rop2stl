@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "katalog": "ŘOP — hlavní index (LO + TO)",
+    "aktualizace": "2026-10-23 22:4x (rešerše #1)",
+    "zdroje": [
+      "ropiky.cz/typologie (12 kategorií, kompletní scrape)",
+      "Denkschrift OKH 1941 scany (lo37-typ-a/b/c-d.jpg, pechotni-srub-*.jpg)",
+      "ropiky.cz SVG půdorysy/schéma (8 ks, parsované)",
+      "ropiky.net KST archiv (B-90 atyp vz. 36 výkres analyzován)",
+      "data z předchozích fází: typ-a-180.json (pilot)"
+    ],
+    "pravidla": "Rozměry jen z primárních zdrojů (skill rop-katalog sekce 1); konflikty mezi zdroji nezakrývat."
+  },
+  "lo_vz_37": {
+    "soubor": "typ-a-180.json (A) + typ-b.json + typ-c.json + typ-d.json + typ-e.json",
+    "typy": {
+      "A": {"varianty": ["A-120 (7,70 m)", "A-140 (6,95 m)", "A-160 (7,40 m)", "A-180 (8,70 m)", "A-200 (8,40 m)", "A-220 (8,70 m)"], "provedeni": ["zeslabene", "normal", "zesilene"], "podil": "85 %", "stav": "data OK, model SCAD v1 (A-180)"},
+      "B": {"varianty": ["B-80 (7,30 m)", "B-90 (7,60 m)", "B-100 (7,70 m)"], "subvarianty": "B1 (boční vlevo) / B2 (vpravo)", "podil": "~7 %", "stav": "data OK"},
+      "C": {"varianty": ["C1", "C2 (2,30 × 3,10 m)"], "podil": "malý", "stav": "data OK"},
+      "D": {"varianty": ["D (4,75 × 3,85 m)"], "podil": "4,6 %", "stav": "data OK"},
+      "E": {"varianty": [], "podil": "2,9 %", "stav": "ROZMĚRY CHYBÍ (TODO: Denkschrift/KST)"}
+    },
+    "atypy": {
+      "stav": "TODO",
+      "poznamka": "Jednotlivé atypy (velmi odlišné objekty, ZVV Brno/Slovensko specifika, modifikace na stavbě) — budu čerpat z ropiky.net databáze objektů + KST výkresů případ od případu."
+    },
+    "planovane_nedostavene": {
+      "stav": "TODO",
+      "poznamka": "Z 15 463 plánovaných LO vz. 37 postaveno 9 632 — plánované typy/varianty dle literatury FORTprint (objednané, nedostavěné bloky)."
+    }
+  },
+  "lo_vz_36": {
+    "soubor": "typ-vz36.json",
+    "typy": {"A": "2 čelní střílny (70 %)", "B": "1 čelní + 1 boční"},
+    "provedeni": ["I (50/60 cm)", "II (60/80 cm)"],
+    "stav": "tloušťky OK, PŮDORYSNÉ ROZMĚRY CHYBÍ (TODO: KST vz. 36 výkresy; B-90 atyp už máme)"
+  },
+  "lo_vz_38": {
+    "stav": "TODO",
+    "poznamka": "Pozorovatelny, minometné objekty vz. 38 — plánované, téměř nedostavěné. Dohledat typologii (ropiky.cz nemá samostatnou sekci, patrně v katalogu objektů)."
+  },
+  "to": {
+    "soubor": "to-prehled.json",
+    "kategorie": ["pechotni-srub (6 odolnostních stupňů)", "delostrelecky-srub (48 m)", "delostrelecka-vez-ro (3,5 m stěny)", "delostrelecka-pozorovatelna (V. st.)", "delostrelecka-tvrz (5 ks)", "vchodovy-objekt", "kulometna-vez-or", "minometna-kopule-g-ja", "kopule-pozorovaci", "pancerovy-zvon (Ø 1,8-2,2 m)"],
+    "stav": "přehled + dílčí rozměry OK; půdorysy srubů z denkschrift scanů (staženy), podrobná extrakce TODO"
+  },
+  "pristi_kroky": [
+    "1. Dohledat rozměry typ E (Denkschrift TO/LO díl nebo KST)",
+    "2. LO vz. 36 půdorysné rozměry (KST ZVV sekce na ropiky.net)",
+    "3. Denkschrift extrakce pěch. srubů (scany staženy: pechotni-srub-dvoupatr.jpg, pechotni-srub-oboustr.jpg)",
+    "4. Atypy: projít ropiky.net dbase_index.php per ZVV",
+    "5. Vilda review katalogu → pak SCAD modely dle schváleného pilota"
+  ]
+}

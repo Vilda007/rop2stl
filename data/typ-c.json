@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "katalog": "LO vz. 37 typ C",
+    "zdroj": "Denkschrift OKH 1941 scan (ropiky.cz/img/typologie/denkschrift/lo37-typ-c-d.jpg), extrakce view_image 23.10.2026",
+    "poznamka": "C = jediná čelní střílna, nejmenší typ, posádka 4; doplňkový objekt. C1/C2 se liší provedením střílny."
+  },
+  "varianty": {
+    "C1": {"sirka": 2.30, "hloubka": 3.10, "vnitrni_sirka": 1.80, "vnitrni_hloubka": 2.30, "stena_bocni": 0.40, "stena_celni": 0.60, "stena_tyl": 0.50},
+    "C2": {"sirka": 2.30, "hloubka": 3.10, "vnitrni_sirka": 1.80, "vnitrni_hloubka": 2.30, "stena_bocni": 0.40, "stena_celni": 0.50, "stena_tyl": 0.50}
+  },
+  "spolecne": {
+    "uhel_strielny": 60,
+    "detail_strielny": [0.50, 0.40]
+  }
+}

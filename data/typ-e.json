@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "katalog": "LO vz. 37 typ E",
+    "zdroj": "ropiky.cz/typologie/lo-vz-37 (text) + lo-vz-37-typ-e.jpg (foto objektu, rozměry nezobrazeny)",
+    "poznamka": "E = nejvzácnější varianta (~2,9 %), 2 muže, jediný lehký kulomet; malé dominantní kóty, krátké zamaskování. ROZMĚRY CHYBÍ — dohledat v Denkschrift/KST."
+  },
+  "varianty": {},
+  "spolecne": {
+    "posadka": 2,
+    "vyzbroj": "LK vz. 26",
+    "podil_realizace_procenta": 2.9
+  },
+  "TODO": "Rozměry: Denkschrift scan pro typ E (lo37-typ-e?) nebo KST výkres konkrétního E objektu; ropiky.cz typologie E nemá SVG půdorys."
+}

@@ -1,0 +1,219 @@
+{
+ "delostrelecka-pozorovatelna": {
+  "dims_count": 11,
+  "dims_sample": [
+   "20 mm",
+   "375 cm",
+   "300 mm",
+   "2,75 m",
+   "2,50 m",
+   "200 mm",
+   "350 m",
+   "200 cm",
+   "200 cm",
+   "30 cm",
+   "18 m"
+  ],
+  "imgs": []
+ },
+ "delostrelecka-tvrz": {
+  "dims_count": 91,
+  "dims_sample": [
+   "10cm",
+   "12cm",
+   "7,5cm",
+   "4 cm",
+   "10cm",
+   "10 cm",
+   "18 m",
+   "14 m",
+   "22 m",
+   "16 m",
+   "20 m",
+   "23 m"
+  ],
+  "imgs": [
+   "/img/typologie/schema-tvrz.svg",
+   "/img/typologie/tvrz-stachelberg-podzemi.jpg"
+  ]
+ },
+ "delostrelecka-vez-ro": {
+  "dims_count": 14,
+  "dims_sample": [
+   "10cm",
+   "420 mm",
+   "10cm",
+   "3,5 m",
+   "10cm",
+   "450 mm",
+   "2,5 m",
+   "350 mm",
+   "300 mm",
+   "420 mm",
+   "70 cm",
+   "10 cm"
+  ],
+  "imgs": []
+ },
+ "delostrelecky-srub": {
+  "dims_count": 19,
+  "dims_sample": [
+   "48 m",
+   "10cm",
+   "10cm",
+   "7,5cm",
+   "48 m",
+   "10cm",
+   "420 mm",
+   "3,50 m",
+   "3,50 m",
+   "300 mm",
+   "245 cm",
+   "20cm"
+  ],
+  "imgs": []
+ },
+ "kopule-pozorovaci": {
+  "dims_count": 5,
+  "dims_sample": [
+   "1,3 m",
+   "1,5 m",
+   "15 cm",
+   "20 cm",
+   "30 cm"
+  ],
+  "imgs": []
+ },
+ "kulometna-vez-or": {
+  "dims_count": 2,
+  "dims_sample": [
+   "30 cm",
+   "305 mm"
+  ],
+  "imgs": []
+ },
+ "lo-vz-36": {
+  "dims_count": 14,
+  "dims_sample": [
+   "7,92 mm",
+   "7,92 mm",
+   "300 m",
+   "50 cm",
+   "60 cm",
+   "8cm",
+   "60 cm",
+   "80 cm",
+   "10cm",
+   "15 cm",
+   "60 cm",
+   "80 cm"
+  ],
+  "imgs": [
+   "/img/typologie/lo-vz-36-hostovice.jpg",
+   "/img/typologie/pudorys-lo-vz-36.svg"
+  ]
+ },
+ "lo-vz-37": {
+  "dims_count": 10,
+  "dims_sample": [
+   "7,92 mm",
+   "7,92 mm",
+   "000 m",
+   "7,92 mm",
+   "500 m",
+   "500 m",
+   "000 m",
+   "8 mm",
+   "20 mm",
+   "5 cm"
+  ],
+  "imgs": [
+   "/img/typologie/denkschrift/lo37-typ-a.jpg",
+   "/img/typologie/denkschrift/lo37-typ-b.jpg",
+   "/img/typologie/denkschrift/lo37-typ-c-d.jpg",
+   "/img/typologie/lo-vz-37-hnanice.jpg",
+   "/img/typologie/lo-vz-37-interier.jpg",
+   "/img/typologie/lo-vz-37-lafeta.jpg",
+   "/img/typologie/lo-vz-37-strielna.jpg",
+   "/img/typologie/lo-vz-37-typ-e.jpg",
+   "/img/typologie/pudorys-lo-vz-37-typ-a.svg",
+   "/img/typologie/pudorys-lo-vz-37-typy-abc.svg",
+   "/img/typologie/rez-ropik.svg"
+  ]
+ },
+ "minometna-kopule-g-ja": {
+  "dims_count": 13,
+  "dims_sample": [
+   "12cm",
+   "12cm",
+   "9cm",
+   "9cm",
+   "12cm",
+   "12cm",
+   "470 mm",
+   "20 mm",
+   "12cm",
+   "800 mm",
+   "500 m",
+   "9cm"
+  ],
+  "imgs": []
+ },
+ "pancerovy-zvon": {
+  "dims_count": 3,
+  "dims_sample": [
+   "30 cm",
+   "120 mm",
+   "300 mm"
+  ],
+  "imgs": [
+   "/img/typologie/rez-pancerovy-zvon.svg",
+   "/img/typologie/zvon-srub-bouda.jpg",
+   "/img/typologie/zvon-srub-mo-s-19.jpg"
+  ]
+ },
+ "pechotni-srub": {
+  "dims_count": 62,
+  "dims_sample": [
+   "4cm",
+   "9cm",
+   "800 m",
+   "200 m",
+   "155 mm",
+   "210 mm",
+   "240 mm",
+   "300 mm",
+   "420 mm",
+   "155 mm",
+   "1,50 m",
+   "1,50 m"
+  ],
+  "imgs": [
+   "/img/typologie/denkschrift/pechotni-srub-dvoupatr.jpg",
+   "/img/typologie/denkschrift/pechotni-srub-oboustr.jpg",
+   "/img/typologie/pudorys-pechotni-srub.svg",
+   "/img/typologie/schema-odolnosti-srubu.svg",
+   "/img/typologie/schema-palba-do-intervalu.svg",
+   "/img/typologie/srub-bouda-krok.jpg",
+   "/img/typologie/srub-zvon-pozorovaci.jpg"
+  ]
+ },
+ "vchodovy-objekt": {
+  "dims_count": 19,
+  "dims_sample": [
+   "200 m",
+   "200 m",
+   "450 m",
+   "38 mm",
+   "20mm",
+   "50 mm",
+   "47 mm",
+   "40mm",
+   "30 mm",
+   "3,7 m",
+   "11 m",
+   "16 m"
+  ],
+  "imgs": []
+ }
+}

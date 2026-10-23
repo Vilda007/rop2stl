@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Šest stupňů odolnosti pěchotních srubů">
+  <rect width="900" height="420" fill="#F1ECE0"/>
+  <text x="30" y="38" font-family="Georgia, serif" font-size="21" fill="#1A1612">Šest stupňů odolnosti pěchotních srubů</text>
+  <text x="30" y="60" font-family="monospace" font-size="12" fill="#5A4E3A">Podle ráže, které měl objekt odolat. Arabské číslice = srub malého typu („arab“), římské = velkého typu („říman“).</text>
+
+  <line x1="30" y1="78" x2="870" y2="78" stroke="#1A1612" stroke-width="1.5"/>
+
+  <g font-family="monospace" font-size="12" fill="#1A1612">
+    <text x="30"  y="98" fill="#5A4E3A">STUPEŇ</text>
+    <text x="130" y="98" fill="#5A4E3A">ODOLÁ RÁŽI</text>
+    <text x="270" y="98" fill="#5A4E3A">TYP OBJEKTU</text>
+    <text x="470" y="98" fill="#5A4E3A">POČET ZÁSAHŮ</text>
+    <text x="640" y="98" fill="#5A4E3A">RELATIVNÍ SÍLA STĚN</text>
+  </g>
+  <line x1="30" y1="108" x2="870" y2="108" stroke="#C9BCA0" stroke-width="1"/>
+
+  <!-- řádky -->
+  <g font-family="monospace" font-size="13">
+    <!-- 1 -->
+    <text x="30"  y="140" font-size="18" fill="#7A3B2E">1</text>
+    <text x="130" y="140" fill="#1A1612">155 mm</text>
+    <text x="270" y="140" fill="#1A1612">malý typ — „arab“</text>
+    <text x="470" y="140" fill="#1A1612">jeden zásah</text>
+    <rect x="640" y="128" width="46" height="16" fill="#B9A882" stroke="#1A1612" stroke-width="0.8"/>
+    <!-- 2 -->
+    <text x="30"  y="176" font-size="18" fill="#7A3B2E">2</text>
+    <text x="130" y="176" fill="#1A1612">210 mm</text>
+    <text x="270" y="176" fill="#1A1612">malý typ — „arab“</text>
+    <text x="470" y="176" fill="#1A1612">jeden zásah</text>
+    <rect x="640" y="164" width="70" height="16" fill="#B9A882" stroke="#1A1612" stroke-width="0.8"/>
+    <!-- I -->
+    <text x="30"  y="212" font-size="18" fill="#4E4738">I</text>
+    <text x="130" y="212" fill="#1A1612">nejnižší římský</text>
+    <text x="270" y="212" fill="#1A1612">velký typ — „říman“</text>
+    <text x="470" y="212" fill="#1A1612">dva do téhož místa</text>
+    <rect x="640" y="200" width="96" height="16" fill="#8B7D62" stroke="#1A1612" stroke-width="0.8"/>
+    <!-- II -->
+    <text x="30"  y="248" font-size="18" fill="#4E4738">II</text>
+    <text x="130" y="248" fill="#1A1612">240 mm</text>
+    <text x="270" y="248" fill="#1A1612">velký typ — „říman“</text>
+    <text x="470" y="248" fill="#1A1612">dva do téhož místa</text>
+    <rect x="640" y="236" width="126" height="16" fill="#8B7D62" stroke="#1A1612" stroke-width="0.8"/>
+    <!-- III -->
+    <text x="30"  y="284" font-size="18" fill="#4E4738">III</text>
+    <text x="130" y="284" fill="#1A1612">300 mm</text>
+    <text x="270" y="284" fill="#1A1612">velký typ — „říman“</text>
+    <text x="470" y="284" fill="#1A1612">dva do téhož místa</text>
+    <rect x="640" y="272" width="164" height="16" fill="#8B7D62" stroke="#1A1612" stroke-width="0.8"/>
+    <!-- IV -->
+    <text x="30"  y="320" font-size="18" fill="#7A3B2E">IV</text>
+    <text x="130" y="320" fill="#1A1612">420 mm</text>
+    <text x="270" y="320" fill="#1A1612">vyhrazeno tvrzím</text>
+    <text x="470" y="320" fill="#1A1612">dva do téhož místa</text>
+    <rect x="640" y="308" width="218" height="16" fill="#5E5646" stroke="#1A1612" stroke-width="0.8"/>
+  </g>
+
+  <line x1="30" y1="342" x2="870" y2="342" stroke="#C9BCA0" stroke-width="1"/>
+  <text x="30" y="366" font-family="monospace" font-size="11.5" fill="#5A4E3A">Pancéřové prvky měly vlastní řadu: boční stěna 15 cm u odolnosti 1 a 2, 20 cm u M a S (sruby I. a II.),</text>
+  <text x="30" y="384" font-family="monospace" font-size="11.5" fill="#5A4E3A">30 cm u V (III. stupeň) a W (tvrze). ŘOP počítalo 10 cm pancíře jako ekvivalent 100 cm železobetonu.</text>
+  <text x="30" y="406" font-family="monospace" font-size="11" fill="#7A3B2E">Šířka pruhu je ilustrativní, nikoli v měřítku. Zdroj: ŘOP, Všeobecné zásady a složky stálého opevnění (1939).</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "katalog": "LO vz. 37 typ D",
+    "zdroj": "Denkschrift OKH 1941 scan (ropiky.cz/img/typologie/denkschrift/lo37-typ-c-d.jpg), extrakce view_image 23.10.2026",
+    "poznamka": "D = boční ochrana těžkých objektů (vchody tvrzí, okolí srubů), ~4,6 % realizovaných; dvě boční střílny do úzkého sektoru."
+  },
+  "varianty": {
+    "D": {"sirka_zaklad": 4.75, "hloubka": 3.85, "vnitrni_hloubka": 2.85}
+  },
+  "spolecne": {
+    "sirka_vchodu": 0.65,
+    "uhel_strielny": 60,
+    "tloucky": [0.60, 0.80]
+  }
+}

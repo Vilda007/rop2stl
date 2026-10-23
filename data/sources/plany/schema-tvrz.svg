@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="Georgia, serif" font-size="12">
+  <style>
+    .bg { fill: #F4EFE6; }
+    .terrain { fill: #D9D0BE; stroke: #8B7355; stroke-width: 1; }
+    .sky { fill: #EDE5D4; }
+    .tunnel { stroke: #5A4632; stroke-width: 8; fill: none; }
+    .tunnel-inner { stroke: #F4EFE6; stroke-width: 3; fill: none; }
+    .block { fill: #5A4632; stroke: #2A2522; stroke-width: 1.5; }
+    .surface { fill: #6B5640; stroke: #2A2522; stroke-width: 1.5; }
+    .hall { fill: #E8DDC7; stroke: #5A4632; stroke-width: 1; }
+    .label { fill: #2A2522; font-size: 10px; }
+    .blocklabel { fill: #F4EFE6; font-size: 9px; font-weight: bold; }
+    .title { fill: #3E2A1F; font-size: 16px; font-weight: bold; }
+    .dim { fill: #5A6B4F; font-size: 10px; font-style: italic; }
+  </style>
+
+  <rect class="bg" width="900" height="540"/>
+  <text class="title" x="20" y="28">Dělostřelecká tvrz — schéma (řez hřebenem)</text>
+  <text class="dim" x="20" y="46">Povrchové sruby + podzemí — ubikace, sklady, strojovna, chodby v hloubce 20–60 m pod skálou</text>
+
+  <!-- Nebe -->
+  <rect class="sky" x="0" y="60" width="900" height="120"/>
+
+  <!-- Profil terénu (zvlněný hřeben) -->
+  <path class="terrain" d="M 0 180 Q 150 100 300 140 Q 450 90 600 150 Q 750 110 900 170 L 900 540 L 0 540 Z"/>
+
+  <!-- Povrchové objekty (5 srubů s přibližnou pozicí na hřebenu) -->
+  <!-- Vchodový objekt -->
+  <rect class="surface" x="40" y="155" width="60" height="40"/>
+  <text class="blocklabel" x="48" y="170">Vchodový</text>
+  <text class="blocklabel" x="48" y="182">objekt</text>
+  <text class="label" x="40" y="210">s rampou pro vozidla</text>
+
+  <!-- Pěchotní srub 1 -->
+  <rect class="surface" x="210" y="115" width="55" height="40"/>
+  <text class="blocklabel" x="218" y="130">Pěch. srub</text>
+  <text class="blocklabel" x="235" y="143">I.</text>
+  <text class="label" x="200" y="100">obrana přístupu</text>
+
+  <!-- Dělostřelecký srub -->
+  <rect class="surface" x="380" y="105" width="70" height="45"/>
+  <text class="blocklabel" x="390" y="120">Dělostřelecký</text>
+  <text class="blocklabel" x="395" y="133">srub</text>
+  <text class="blocklabel" x="385" y="146">(otoč. věž)</text>
+  <text class="label" x="365" y="90">věž vz. 38</text>
+
+  <!-- Pozorovací srub -->
+  <rect class="surface" x="555" y="125" width="50" height="35"/>
+  <text class="blocklabel" x="565" y="140">Pozorovací</text>
+  <text class="blocklabel" x="570" y="152">srub</text>
+
+  <!-- Minometný objekt -->
+  <rect class="surface" x="720" y="140" width="55" height="35"/>
+  <text class="blocklabel" x="728" y="155">Minometný</text>
+  <text class="blocklabel" x="733" y="167">objekt</text>
+
+  <!-- Pěchotní srub 2 -->
+  <rect class="surface" x="810" y="155" width="55" height="40"/>
+  <text class="blocklabel" x="818" y="170">Pěch. srub</text>
+  <text class="blocklabel" x="833" y="183">II.</text>
+
+  <!-- PODZEMÍ -->
+  <!-- Šachty -->
+  <line x1="70" y1="195" x2="70" y2="350" stroke="#2A2522" stroke-width="6"/>
+  <line x1="237" y1="155" x2="237" y2="350" stroke="#2A2522" stroke-width="4"/>
+  <line x1="415" y1="150" x2="415" y2="350" stroke="#2A2522" stroke-width="4"/>
+  <line x1="580" y1="160" x2="580" y2="350" stroke="#2A2522" stroke-width="4"/>
+  <line x1="747" y1="175" x2="747" y2="350" stroke="#2A2522" stroke-width="4"/>
+  <line x1="837" y1="195" x2="837" y2="350" stroke="#2A2522" stroke-width="4"/>
+
+  <!-- Hlavní chodba -->
+  <line class="tunnel" x1="70" y1="350" x2="837" y2="350"/>
+  <line class="tunnel-inner" x1="70" y1="350" x2="837" y2="350"/>
+  <text class="label" x="370" y="340">Hlavní podzemní chodba (500–1 500 m)</text>
+
+  <!-- Podzemní sál kasáren -->
+  <rect class="hall" x="140" y="395" width="170" height="50"/>
+  <text class="label" x="155" y="420">Podzemní kasárna</text>
+  <text class="label" x="155" y="434">(100–200 lůžek)</text>
+
+  <!-- Strojovna -->
+  <rect class="hall" x="340" y="395" width="130" height="50"/>
+  <text class="label" x="355" y="420">Strojovna</text>
+  <text class="label" x="355" y="434">(diesel, ventilace, voda)</text>
+
+  <!-- Sklady munice -->
+  <rect class="hall" x="500" y="395" width="140" height="50"/>
+  <text class="label" x="515" y="420">Sklady munice</text>
+  <text class="label" x="515" y="434">+ filtrovna plynů</text>
+
+  <!-- Velitelství -->
+  <rect class="hall" x="670" y="395" width="120" height="50"/>
+  <text class="label" x="685" y="420">Velitelství</text>
+  <text class="label" x="685" y="434">+ telefonní ústředna</text>
+
+  <!-- Propojovací kanály -->
+  <line class="tunnel" x1="225" y1="370" x2="225" y2="395"/>
+  <line class="tunnel" x1="405" y1="370" x2="405" y2="395"/>
+  <line class="tunnel" x1="570" y1="370" x2="570" y2="395"/>
+  <line class="tunnel" x1="730" y1="370" x2="730" y2="395"/>
+
+  <!-- Hloubkové měřítko -->
+  <g transform="translate(30, 200)">
+    <line x1="0" y1="0" x2="0" y2="240" stroke="#5A4632" stroke-width="0.5"/>
+    <text class="dim" x="5" y="5">0 m</text>
+    <line x1="-3" y1="80" x2="3" y2="80" stroke="#5A4632"/>
+    <text class="dim" x="5" y="82">-30 m</text>
+    <line x1="-3" y1="160" x2="3" y2="160" stroke="#5A4632"/>
+    <text class="dim" x="5" y="162">-50 m</text>
+    <line x1="-3" y1="240" x2="3" y2="240" stroke="#5A4632"/>
+    <text class="dim" x="5" y="242">-80 m</text>
+  </g>
+
+  <!-- Legenda / statistika -->
+  <g transform="translate(20, 475)">
+    <text class="title" x="0" y="0" font-size="13">Typická tvrz v číslech:</text>
+    <text class="label" x="0" y="18">• 4–7 povrchových objektů (sruby + pozorovací + minometný)</text>
+    <text class="label" x="0" y="32">• 500–2 000 m podzemních chodeb v hloubce 20–60 m</text>
+    <text class="label" x="0" y="46">• posádka 200–400 mužů organizovaných ve směnách</text>
+    <text class="label" x="400" y="18">• vlastní elektrocentrála, filtrace plynů, zásoby na týdny</text>
+    <text class="label" x="400" y="32">• stěny 2,25–3,50 m (III.–IV. stupeň), zvony 30–70 t</text>
+    <text class="label" x="400" y="46">• stavba 3–5 let, cena 50–150 mil. Kčs</text>
+  </g>
+</svg>

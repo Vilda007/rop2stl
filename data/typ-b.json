@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "katalog": "LO vz. 37 typ B",
+    "zdroj": "Denkschrift OKH 1941 scan (ropiky.cz/img/typologie/denkschrift/lo37-typ-b.jpg), extrakce view_image 23.10.2026",
+    "poznamka": "B = 1 boční + 1 čelní střílna, posádka 7; varianty B1 (boční vlevo) / B2 (boční vpravo); číslo = úhel"
+  },
+  "varianty": {
+    "B-80":  {"sirka": 7.30, "hloubka": 3.45},
+    "B-90":  {"sirka": 7.60, "hloubka": 3.45},
+    "B-100": {"sirka": 7.70, "hloubka": 3.65}
+  },
+  "spolecne": {
+    "sirka_vchodu": 0.65,
+    "uhel_strielny": 60,
+    "tloucky_viditelne": [0.60, 0.70, 0.80, 1.00, 1.10],
+    "rez": {"zaklad_sirka": 6.55, "vnitrni_sirka": 3.15, "vnitrni_vyska": 2.00, "uhly": [30, 30]}
+  }
+}

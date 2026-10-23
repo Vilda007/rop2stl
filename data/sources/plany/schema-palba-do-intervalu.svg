@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="Princip bočních paleb mezi pěchotními sruby">
+  <rect width="900" height="400" fill="#F1ECE0"/>
+  <text x="30" y="36" font-family="Georgia, serif" font-size="21" fill="#1A1612">Princip bočních paleb — proč srub nestřílí před sebe</text>
+  <text x="30" y="58" font-family="monospace" font-size="12" fill="#5A4E3A">Každý objekt kryje palbou prostor před sousedy. Každá boční palba do přehrady musela být nejméně zdvojena.</text>
+
+  <!-- strana nepřítele -->
+  <rect x="0" y="80" width="900" height="86" fill="#7A3B2E" opacity="0.07"/>
+  <text x="30" y="104" font-family="monospace" font-size="12" fill="#7A3B2E" letter-spacing="2">NEPŘÍTEL</text>
+
+  <!-- pásmo překážek -->
+  <g stroke="#5A4E3A" stroke-width="1.4" opacity="0.75">
+    <path d="M 60 178 l 10 -12 M 70 178 l -10 -12 M 100 178 l 10 -12 M 110 178 l -10 -12 M 140 178 l 10 -12 M 150 178 l -10 -12
+             M 180 178 l 10 -12 M 190 178 l -10 -12 M 220 178 l 10 -12 M 230 178 l -10 -12 M 260 178 l 10 -12 M 270 178 l -10 -12
+             M 300 178 l 10 -12 M 310 178 l -10 -12 M 340 178 l 10 -12 M 350 178 l -10 -12 M 380 178 l 10 -12 M 390 178 l -10 -12
+             M 420 178 l 10 -12 M 430 178 l -10 -12 M 460 178 l 10 -12 M 470 178 l -10 -12 M 500 178 l 10 -12 M 510 178 l -10 -12
+             M 540 178 l 10 -12 M 550 178 l -10 -12 M 580 178 l 10 -12 M 590 178 l -10 -12 M 620 178 l 10 -12 M 630 178 l -10 -12
+             M 660 178 l 10 -12 M 670 178 l -10 -12 M 700 178 l 10 -12 M 710 178 l -10 -12 M 740 178 l 10 -12 M 750 178 l -10 -12
+             M 780 178 l 10 -12 M 790 178 l -10 -12 M 820 178 l 10 -12 M 830 178 l -10 -12"/>
+  </g>
+  <line x1="50" y1="180" x2="850" y2="180" stroke="#5A4E3A" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="600" y="198" font-family="monospace" font-size="11" fill="#5A4E3A">trasa překážek — „prvá zadní hranice pásma smrti“</text>
+
+  <!-- palebné vějíře -->
+  <g opacity="0.30">
+    <path d="M 200 250 L 470 170 L 470 205 Z" fill="#7A3B2E"/>
+    <path d="M 470 250 L 200 170 L 200 205 Z" fill="#7A3B2E"/>
+    <path d="M 470 250 L 740 170 L 740 205 Z" fill="#4E6B8A"/>
+    <path d="M 740 250 L 470 170 L 470 205 Z" fill="#4E6B8A"/>
+  </g>
+
+  <!-- sruby -->
+  <g>
+    <rect x="170" y="248" width="60" height="30" fill="#8B7D62" stroke="#1A1612" stroke-width="1.6"/>
+    <rect x="440" y="248" width="60" height="30" fill="#8B7D62" stroke="#1A1612" stroke-width="1.6"/>
+    <rect x="710" y="248" width="60" height="30" fill="#8B7D62" stroke="#1A1612" stroke-width="1.6"/>
+    <ellipse cx="200" cy="248" rx="10" ry="4" fill="#5E5646" stroke="#1A1612" stroke-width="0.8"/>
+    <ellipse cx="470" cy="248" rx="10" ry="4" fill="#5E5646" stroke="#1A1612" stroke-width="0.8"/>
+    <ellipse cx="740" cy="248" rx="10" ry="4" fill="#5E5646" stroke="#1A1612" stroke-width="0.8"/>
+  </g>
+  <g font-family="monospace" font-size="12" fill="#1A1612" text-anchor="middle">
+    <text x="200" y="296">srub A</text>
+    <text x="470" y="296">srub B</text>
+    <text x="740" y="296">srub C</text>
+  </g>
+
+  <!-- rozestup -->
+  <g stroke="#1A1612" stroke-width="1">
+    <line x1="200" y1="316" x2="470" y2="316"/>
+    <line x1="200" y1="311" x2="200" y2="321"/>
+    <line x1="470" y1="311" x2="470" y2="321"/>
+    <line x1="470" y1="316" x2="740" y2="316"/>
+    <line x1="740" y1="311" x2="740" y2="321"/>
+  </g>
+  <text x="335" y="334" font-family="monospace" font-size="12" fill="#1A1612" text-anchor="middle">600–800 m (max. 1 200 m)</text>
+  <text x="605" y="334" font-family="monospace" font-size="12" fill="#1A1612" text-anchor="middle">600–800 m (max. 1 200 m)</text>
+
+  <text x="30" y="368" font-family="monospace" font-size="11.5" fill="#5A4E3A">Interval mezi A a B kryjí palby obou sousedů — srub B navíc střílí i do intervalu B–C. Čelně smějí být obráceny</text>
+  <text x="30" y="386" font-family="monospace" font-size="11.5" fill="#5A4E3A">jen střílny zbraní chráněných pancířem. Zdroj: ŘOP, Všeobecné zásady a složky stálého opevnění (1939).</text>
+</svg>
