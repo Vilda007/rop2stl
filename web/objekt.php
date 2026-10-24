@@ -21,16 +21,16 @@ $objects_db = array(
     ),
     'dims' => array(
       array('Tvar čela', 'wide-arrow', 'ploché čelo ~3,6 m + šikmá ramena (odraz střel) [fotodok. Vilda + DENK crop]'),
-      array('Křídla střílen — výstupek', '0,80 m/bok', 'střílnové stěny kolmé na osu, palba PODÉL linie [KST A160Z]'),
+      array('Křídla střílen', '0,80 m/bok, na 75–94 % hloubky', 'střílnové stěny míří PODÉL linie [REF STL řezová analýza]'),
       array('Šířka přes křídla', '8,70 m', '[DENK — Denkschrift 1941]'),
-      array('Šířka těla', '7,10 m', 'max šířka − 2× výstupek křídel [KST topologie]'),
-      array('Týl', 'rovná stěna 7,10 m', 'se zapuštěným vstupním portálkem [fotodok. Vilda + DENK]'),
+      array('Šířka těla', '7,15 m', 'konstantní mezi rameny a křídly [REF STL řez 50 %]'),
+      array('Týl', 'rovná stěna 7,40 m', 'se zkosenými rohy za křídly a zapuštěným portálkem [REF STL + fotodok. Vilda]'),
       array('Hloubka (apex→tyl)', '~5,7 m', 'topologie KST škálovaná na šířku A-180 [≈ — A-180 výkres v archivu dosud nenalezen]'),
       array('Tloušťka stěn (normální)', '0,80 m', 'zeslabené 0,60 / normální 0,80 / zesílené 1,00 m [DENK/typologie]'),
       array('Světlovnitřní výška', '1,70 m', '[≈ — k ověření z KST řezů (A140Z_rezy.pdf staženo)]'),
       array('Vchod', '0,65 m', 'pancéřové dveře, zapuštěný portálek [DENK + fotodok.]'),
     ),
-    'provenance' => 'Tvar doložen trojím zdrojem: fotodokumentace reálného objektu typu A (Vilda, 8 snímků 24.10.2026 — wide-arrow čelo, křídla-bloky, rovný týl), Denkschrift OKH 1941 (šířky variant) a KST AIVO03 typové výkresy (A160Z: křídla s výskokem, podklady topologie). Konflikt pramenů u A-160: Denkschrift 7,40 m vs KST 6,93 m (uvádíme obě). Dřívější interpretace — chevronový hrot čela a zakulacený týl R4,32 — byly korigovány po srovnání s fotodokumentací; hodnoty [≈] zůstávají k ověření proti dalším KST výkresům.',
+    'provenance' => 'Tvar doložen čtyřmi zdroji: referenční STL model (Vilda/makerworld 769524 — řezová analýza, geometrie křídel 75–94 % hloubky), fotodokumentace reálného objektu typu A (Vilda, 8 snímků 24.10.2026 — wide-arrow čelo, rovný týl), Denkschrift OKH 1941 (šířky variant) a KST AIVO03 typové výkresy (A160Z). Konflikt pramenů u A-160: Denkschrift 7,40 m vs KST 6,93 m (uvádíme obě). Dřívější interpretace — chevronový hrot čela a zakulacený týl R4,32 — byly korigovány po srovnání s fotodokumentací; hodnoty [≈] zůstávají k ověření proti dalším KST výkresům.',
   ),
   // další objekty později
 );
@@ -127,22 +127,21 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
   <div>
     <div class="panel plan-box">
       <h2>Půdorys <span class="hint">— schéma</span></h2>
-      <svg viewBox="0 0 320 250" role="img" aria-label="Půdorys LO vz. 37 A-180 — v7 wide-arrow">
-        <path d="M99,30 L221,30 L308,129 L308,159 L281,159 L281,214 L39,214 L39,159 L12,159 L12,129 Z"
+      <svg viewBox="0 0 320 250" role="img" aria-label="Půdorys LO vz. 37 A-180 — v8.3 dle referenčního STL">
+        <path d="M92,30 L228,30 L282,62 L282,166 L308,166 L308,200 L286,210 L34,210 L12,200 L12,166 L38,166 L38,62 Z"
               fill="rgba(217,164,65,.08)" stroke="#d9a441" stroke-width="2.5" stroke-linejoin="round"/>
-        <!-- střílnové otvory na střílnových stěnách křídel (boční palba podél linie) -->
-        <rect x="311" y="130" width="4" height="31" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
-        <rect x="5" y="130" width="4" height="31" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
-        <!-- vchod: zapuštěný portálek v rovném týlu -->
-        <rect x="149" y="211" width="22" height="9" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
-        <!-- koty -->
-        <text x="160" y="18" text-anchor="middle" fill="#9aa3af" font-size="11">ploché čelo ~3,6 m + šikmá ramena</text>
-        <text x="326" y="142" fill="#6b8cae" font-size="10" transform="rotate(90 326 142)">boční palba</text>
-        <text x="3" y="142" fill="#6b8cae" font-size="10" transform="rotate(-90 3 142)">boční palba</text>
-        <text x="160" y="236" text-anchor="middle" fill="#9aa3af" font-size="11">rovný týl 7,10 m · vchod 0,65 m</text>
+        <!-- střílnové otvory (boční palba) -->
+        <rect x="311" y="168" width="4" height="31" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
+        <rect x="5" y="168" width="4" height="31" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
+        <!-- vchod -->
+        <rect x="149" y="207" width="22" height="9" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
+        <text x="160" y="18" text-anchor="middle" fill="#9aa3af" font-size="11">ploché čelo 4,0 m + ramena</text>
+        <text x="326" y="180" fill="#6b8cae" font-size="10" transform="rotate(90 326 180)">boční palba</text>
+        <text x="3" y="180" fill="#6b8cae" font-size="10" transform="rotate(-90 3 180)">boční palba</text>
+        <text x="160" y="232" text-anchor="middle" fill="#9aa3af" font-size="11">týl 7,40 m · vchod 0,65 m · křídla na 75–94 % hloubky</text>
         <text x="315" y="118" fill="#9aa3af" font-size="11" transform="rotate(90 315 118)">šířka přes křídla 8,70 m [DENK]</text>
       </svg>
-      <p class="plan-cap">Půdorys v7: wide-arrow čelo, křídla-bloky s výskokem 0,80 m (boční palba), rovný týl s portálkem — sladěno s fotodokumentací (8 snímků) + Denkschrift; koty s proveniencí v tabulce.</p>
+      <p class="plan-cap">Půdorys v8.3: wide-arrow čelo, křídla na 75–94 % hloubky (boční palba), zkosené rohy, rovný týl — geometrie ověřena řezovou analýzou proti referenčnímu STL (Vilda) s průměrnou odchylkou 0,33 m.</p>
     </div>
 
     <div class="panel" style="margin-top:22px">

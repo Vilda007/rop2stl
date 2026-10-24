@@ -42,13 +42,17 @@ function width_variant(v) =
 W       = width_variant(variant);  // max šířka přes KŘÍDLA [m]
 W_body  = W - 1.60;                // šířka TĚLA (křídla +0,80 m/bok) [KST A160Z výstupek]
 a_krid  = (180 - variant) / 2;     // pootočení střílnové stěny k čelu [°]
-// ---------- Topologie (v7: wide-arrow dle fotodokumentace) ----------
-X_nose  = 0;                       // PLOCHÉ čelo (ne hrot!) [fotka/DENK crop]
-W_nose  = 3.60;                    // šířka plochého čela [≈ fotka: ~1/2 šířky]
-X_kr_f  = 2.90;                    // přední roh křídla [≈]
-d_kr    = 0.90;                    // hloubka křídla podél osy [≈ KST]
-X_kr_b  = X_kr_f + d_kr;           // zadní hrana křídla
-X_rear  = 5.40;                    // rovná týlní stěna [≈]
+// ---------- Topologie (v8.1: dle řezové analýzy referenčního STL —
+// Vilda/makerworld 769524; normalizace 105 mm = 8,70 m [DENK]) ----------
+X_nose  = 0;                       // PLOCHÉ čelo (wide-arrow, ne hrot)
+W_nose  = 4.00;                     // šířka čela [REF: 48/105 mm × 8,70]
+X_sh    = 0.95;                     // konec ramen [REF: 48→86,6 mm přes 12/64 hloubky ≈ 1,0 m, ~58°]
+W_body  = 7.15;                     // šířka těla KONSTANTNĚ [REF: 86-89 mm ≈ 7,1-7,4]
+W_tyl   = 7.40;                     // šířka týlu [REF rear: ~90/105×8,70 ≈ 7,4]
+X_kr_f  = 4.00;                     // přední líc křídla [REF: ~75 % hloubky]
+d_kr    = 1.00;                     // hloubka křídla [REF: bins 23-28 ≈ 1,0 m]
+X_kr_b  = X_kr_f + d_kr;            // zadní líc křídla = 94 % hloubky
+X_rear  = 5.30;                     // rovná týlní stěna [REF: 64/105×8,70 = 5,30]
 h_int   = 1.70;                    // světlá výška [≈ ověřit z A140Z_rezy]
 h_cor   = 1.40;                    // výška vstupní chodby [≈]
 w_door  = 0.65;                    // vchod [DENK]
@@ -69,19 +73,25 @@ S = 1000 / scale_denom;
 module hull2d() {
   scale([S, S])
   polygon([
-    // ROVNÝ TÝL (vstupní stěna)
-    [X_rear,  W_body/2],
-    [X_kr_b,  W_body/2],   // bok těla P
-    // KŘÍDLO P — výrazný obdélníkový blok [fotka/DENK]
-    [X_kr_b,  W/2],        // vnější boku křídla P (výstupek 0,80 m)
-    [X_kr_f,  W/2],        // STŘÍLNÁ STĚNA P — boční palba +Y
-    // ŠIKMÉ RAMENO (shoulder) od křídla k čelu [fotka: wide-arrow]
-    [X_nose,  W_nose/2],   // přední roh čela P
-    // PLOCHÉ ČELO (wide nose)
+    // ROVNÝ TÝL (vstupní stěna) [REF: 7,4 m]
+    [X_rear,  W_tyl/2],
+    // ZKOSENÍ rohu za křídlem [REF 95 %: 8,48 → 7,4 plynule]
+    [X_kr_b,  W_body/2],            // bok těla P konstantní ke křídlu [REF 50 %: 7,15]
+    // KŘÍDLO P — výskok ven na zadním licu, blok 0,95 m [REF 73-89 %]
+    [X_kr_b,  W/2],        // zadní líc křídla P
+    [X_kr_f,  W/2],        // vnější střílnová stěna P — boční palba +Y
+    [X_kr_f,  W_body/2],    // návrat křídel k tělu (přední líc)
+    [X_sh,    W_body/2],    // tělo dál konstantně k ramenům
+    // ŠIKMÉ RAMENO ~58° [REF: 48→86,6 mm přes ~1,0 m]
+    [X_nose,  W_nose/2],
+    // PLOCHÉ ČELO (wide nose 4,0 m) [REF 48 mm]
     [X_nose, -W_nose/2],
-    [X_kr_f, -W/2],        // rameno L → střílná stěna L
-    [X_kr_b, -W/2],        // křídlo L — blok
+    [X_sh,   -W_body/2],
+    [X_kr_f, -W_body/2],
+    [X_kr_f, -W/2],        // vnější střílnová stěna L — boční palba -Y
+    [X_kr_b, -W/2],        // zadní líc křídla L
     [X_kr_b, -W_body/2],   // bok těla L
+    [X_rear, -W_tyl/2],   // ROVNÝ TÝL L (se zkosením rohu za křídly)
   ]);
   // POZN.: pootočení střílnových střílen pro variant≠180 řeší úhel os střílen
   // v orientaci lafety (krytí střílny); půdorysný obrys křídel zůstává
@@ -106,8 +116,8 @@ module korpus() {
     // míří ±Y podél linie; pro variant≠90+... osy se pootočí (lafeta v interiéru)
     if (strilny) {
       for (m = [1, -1]) {
-        translate([mm((X_kr_f + X_kr_b)/2), m*(mm(W/2) - mm(0.60)), mm(z_strel)])
-          cube([mm(d_kr + 0.3), mm(1.2), mm(h_strel)], center=[true, m==1?false:true, false]);
+        translate([mm(X_kr_b) - mm(0.5), m*(mm(W/2) - mm(0.60)), mm(z_strel)])
+          cube([mm(1.0), mm(1.2), mm(h_strel)]);
       }
     }
   }
@@ -125,5 +135,5 @@ $fn = 96;
 if (part == 0) { korpus(); } else { strecha(); }
 
 echo(str("LO vz.37 A-", variant, " v6 | 1:", scale_denom, " | part: ", part==0?"KORPUS":"STŘECHA"));
-echo(str("Čelo wide-arrow (ploché ", W_nose, " m + ramena) | křídla-bloky v předních rozích (+", (W-W_body)/2, " m/bok, střílny podél linie, osy ", variant, "°) | ROVNÝ týl ", W_body, " m s portálkem"));
+echo(str("Čelo wide-arrow (ploché ", W_nose, " m + ramena ~38°) | křídla-bloky na 70-86 % hloubky (+", (W-W_body)/2, " m/bok, střílny podél linie, osy ", variant, "°) | ROVNÝ týl ", W_body, " m s portálkem"));
 echo(str("Šířka přes křídla ", W, " m [DENK] | hloubka ", X_rear, " m [≈] | výšky [≈ KST řezy k ověření]"));
