@@ -20,17 +20,17 @@ $objects_db = array(
       array('A-220', '8,70', '', false),
     ),
     'dims' => array(
-      array('Tvar čela', 'chevron (klin)', 'dvě sběrné stěny k centrálnímu hrotu — odraz střel'),
-      array('Šířka přes střílnová křídla', '9,20 m', 'křídla vybíhají mimo obrys těla; Denkschrift 1941'),
-      array('Šířka týlní stěny', '7,00 m', 'rovnná stěna se zapuštěným portálkem vchodu'),
-      array('Hloubka objektu (apex→tyl)', '5,80 m', 'korigováno dle Denkschrift + fotodokumentace'),
-      array('Střílny', 'boční palba', 'stěny střílen kolmé na osu — palba PODÉL linie'),
-      array('Tloušťka stěn (normální)', '0,80 m', 'zeslabené 0,60 / normální 0,80 / zesílené 1,00 m'),
-      array('Světlovnitřní výška střelecké místnosti', '1,70 m', ''),
-      array('Vchod', '0,65 m', 'pancéřové dveře, zapuštěný portálek 0,50 m'),
-      array('Rozevření os střílen', '180°', 'typové označení varianty'),
+      array('Tvar čela', 'chevron (klin)', 'sběrné stěny k hrotu — odraz střel [KST topologie, fotodok.]'),
+      array('Křídla střílen — výstupek', '0,80 m/bok', 'střílnové stěny kolmé na osu, palba PODÉL linie [KST A160Z]'),
+      array('Šířka přes křídla', '8,70 m', '[DENK — Denkschrift 1941]'),
+      array('Šířka těla', '7,10 m', 'max šířka − 2× výstupek křídel [KST topologie]'),
+      array('Zakulacený týl', 'oblouk, sagitta ~1,8 m', 'R4,32 m na výkresu A-160Z [KST], škálováno [≈]'),
+      array('Hloubka (apex→tyl)', '~5,7 m', 'topologie KST škálovaná na šířku A-180 [≈ — A-180 výkres v archivu dosud nenalezen]'),
+      array('Tloušťka stěn (normální)', '0,80 m', 'zeslabené 0,60 / normální 0,80 / zesílené 1,00 m [DENK/typologie]'),
+      array('Světlovnitřní výška', '1,70 m', '[≈ — k ověření z KST řezů (A140Z_rezy.pdf staženo)]'),
+      array('Vchod', '0,65 m', 'pancéřové dveře, zapuštěný portálek [DENK + fotodok.]'),
     ),
-    'provenance' => 'Denkschrift über die tschecho-slowakische Landesbefestigung (OKH 1941) — zaměření po okupaci; tvar doložen též fotodokumentací dochovaných objektů (chevronové čelo, střílny s boční palbou). Pozn.: přesné koty jednotlivých variant se mezi prameny liší — katalog korigujeme proti KST výkresům; model v4 používá sladěnou geometrii.',
+    'provenance' => 'Primární pramen: originální typový výkres KST AIVO03/A160Z.pdf (stavební dokumentace ŘOP 1937, 1:25) — topologie (chevron, křídla 0,80 m, zakulacený týl R4,32). Šířka A-180 8,70 m z Denkschrift OKH 1941. Konflikt pramenů u A-160: Denkschrift 7,40 m vs KST 6,93 m (katalog uvádí obě hodnoty). Hodnoty [≈] jsou odvozené škálováním — průběžně ověřujeme proti dalším KST výkresům; vlastní typový výkres A-180 v archivu dosud nalezen nebyl (hledání pokračuje).',
   ),
   // další objekty později
 );
@@ -127,27 +127,22 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
   <div>
     <div class="panel plan-box">
       <h2>Půdorys <span class="hint">— schéma</span></h2>
-      <svg viewBox="0 0 320 240" role="img" aria-label="Půdorys LO vz. 37 A-180">
-        <!-- vnější obrys v4: chevronové čelo (apex nahoře), křídla střílen, týl dole -->
-        <polygon points="52,200 248,200 248,130 279,130 279,94 150,38 21,94 21,130"
-                 fill="rgba(217,164,65,.08)" stroke="#d9a441" stroke-width="2.5" stroke-linejoin="round"/>
-        <!-- vnitřní světlý prostor -->
-        <polygon points="66,196 234,196 234,138 262,138 262,98 150,50 38,98 38,138"
-                 fill="none" stroke="#6b8cae" stroke-width="1.5" stroke-dasharray="5 4"/>
-        <!-- střílnové otvory na vnějších stěnách křídel (boční palba) -->
-        <rect x="274" y="107" width="12" height="10" fill="#12151a" stroke="#6b8cae" stroke-width="1.5"/>
-        <rect x="14" y="107" width="12" height="10" fill="#12151a" stroke="#6b8cae" stroke-width="1.5"/>
-        <!-- vchod: zapuštěný portálek v týlní stěně -->
-        <rect x="141" y="190" width="18" height="12" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
+      <svg viewBox="0 0 320 245" role="img" aria-label="Půdorys LO vz. 37 A-180 — v5.2 dle KST">
+        <path d="M160,25 L282,142 L310,142 L310,161 A153,153 0 0 1 38,161 L38,142 Z"
+              fill="rgba(217,164,65,.08)" stroke="#d9a441" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- střílnové otvory na střílnových stěnách křídel (boční palba) -->
+        <rect x="312" y="148" width="4" height="22" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
+        <rect x="4" y="148" width="4" height="22" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
+        <!-- vchod v zakulaceném týlu -->
+        <rect x="151" y="218" width="18" height="8" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
         <!-- koty -->
-        <text x="150" y="24" text-anchor="middle" fill="#9aa3af" font-size="11">čelo — chevron (apex)</text>
-        <text x="286" y="118" text-anchor="middle" fill="#6b8cae" font-size="10" transform="rotate(90 286 118)">boční palba →</text>
-        <text x="34" y="118" text-anchor="middle" fill="#6b8cae" font-size="10" transform="rotate(-90 34 118)">← boční palba</text>
-        <text x="150" y="222" text-anchor="middle" fill="#9aa3af" font-size="11">týl 7,00 m · vchod 0,65 m (zapuštěný portálek)</text>
-        <text x="306" y="120" text-anchor="middle" fill="#9aa3af" font-size="11" transform="rotate(90 306 120)">šířka přes střílny 9,20 m</text>
-        <text x="8" y="120" text-anchor="middle" fill="#9aa3af" font-size="11" transform="rotate(-90 8 120)">hloubka 5,80 m</text>
+        <text x="160" y="14" text-anchor="middle" fill="#9aa3af" font-size="11">apex čela — chevron [KST]</text>
+        <text x="326" y="149" fill="#6b8cae" font-size="10" transform="rotate(90 326 149)">boční palba</text>
+        <text x="2" y="149" fill="#6b8cae" font-size="10" transform="rotate(-90 2 149)">boční palba</text>
+        <text x="160" y="240" text-anchor="middle" fill="#9aa3af" font-size="11">zakulacený týl R4,32 [KST] · vchod</text>
+        <text x="312" y="122" fill="#9aa3af" font-size="11" transform="rotate(90 312 122)">šířka přes křídla 8,70 m [DENK]</text>
       </svg>
-      <p class="plan-cap">Půdorys v4: chevronové čelo, střílnová křídla s boční palbou, zapuštěný vchod. Dle Denkschrift 1941 + fotodokumentace; koty viz tabulka vlevo.</p>
+      <p class="plan-cap">Půdorys v5.2 dle originálního typového výkresu KST A160Z (1937): chevron, křídla střílen s výskokem 0,80 m, zakulacený týl. Šířka A-180 dle Denkschrift; zbylé koty viz tabulka s proveniencí.</p>
     </div>
 
     <div class="panel" style="margin-top:22px">
@@ -156,20 +151,20 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
         Korpus + <strong>oddělávací střecha</strong> (prohlídka interiéru). Měřítko a provedení
         se nastavuje parametry — STL vygenerujete jedním příkazem:
       </p>
-      <div class="print-cmd"><span class="c"># korpus (1:87 H0)</span>
-openscad -o korpus-1_87.stl \
-  -D "scale_denom=87" -D "part=0" ropik-a180.scad
+      <div class="print-cmd"><span class="c"># korpus A-180 (1:87 H0) — varianta: 120|140|160|180|200|220</span>
+openscad -o korpus-a180-1_87.stl \
+  -D "scale_denom=87" -D "part=0" -D "variant=180" ropik-a.scad
 
-<span class="c"># střecha</span>
-openscad -o strecha-1_87.stl \
-  -D "scale_denom=87" -D "part=1" ropik-a180.scad</div>
+<span class="c"># střecha A-180</span>
+openscad -o strecha-a180-1_87.stl \
+  -D "scale_denom=87" -D "part=1" -D "variant=180" ropik-a.scad</div>
       <p style="color:var(--text-dim);font-size:.85rem">
         Měřítka: <span class="tag">1:87 H0</span> <span class="tag">1:120</span>
         <span class="tag">1:144 N</span> <span class="tag">1:72</span> <span class="tag">1:48</span> <span class="tag">1:35</span>
         · Provedení: zeslabené / normální / zesílené
       </p>
       <ul class="dl-list">
-        <a href="https://github.com/Vilda007/rop2stl/raw/main/scad/ropik-a180.scad" download>⬇ ropik-a180.scad</a>
+        <a href="https://github.com/Vilda007/rop2stl/raw/main/scad/ropik-a.scad" download>⬇ ropik-a.scad (typ A, volitelná varianta)</a>
         <a href="https://github.com/Vilda007/rop2stl" target="_blank" rel="noopener">⟶ GitHub repozitář</a>
       </ul>
     </div>
