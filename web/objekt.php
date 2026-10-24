@@ -21,9 +21,10 @@ $objects_db = array(
     ),
     'dims' => array(
       array('Čelo (k nepříteli)', 'rovná stěna 7,40 m', 's ušima střílen na bocích — střílny míří PODÉL linie [Vilda 10:59 + REF STL]'),
-      array('Uši střílen', '+0,80 m/bok, u čela (0,3–1,3 m)', 'střílnové stěny míří PODÉL linie — boční palba [Vilda 10:59 + REF STL]'),
+      array('Uši', 'zakulacené (oblouk ~R0,55 m), +0,80 m/bok, u čela', 'kryjí střílny ve stěně za sebou [Vilda 11:22 + REF STL]'),
       array('Šířka přes křídla', '8,70 m', '[DENK — Denkschrift 1941]'),
       array('Šířka těla', '7,15 m', 'konstantní mezi rameny a křídly [REF STL řez 50 %]'),
+      array('Střílny', 'v polovině stěny, schované ZA ušima', 'palba PODÉL linie — ucho kryje střílnu před čelní střelbou [Vilda 11:22]'),
       array('Týl (s vchodem)', 'úzká stěna 4,0 m', 'zapuštěný portálek 0,50 m + pancéřové dveře 0,65 m [Vilda 10:59 + REF STL]'),
       array('Hloubka (apex→tyl)', '~5,7 m', 'topologie KST škálovaná na šířku A-180 [≈ — A-180 výkres v archivu dosud nenalezen]'),
       array('Tloušťka stěn (normální)', '0,80 m', 'zeslabené 0,60 / normální 0,80 / zesílené 1,00 m [DENK/typologie]'),
@@ -127,22 +128,24 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
   <div>
     <div class="panel plan-box">
       <h2>Půdorys <span class="hint">— schéma</span></h2>
-      <svg viewBox="0 0 320 255" role="img" aria-label="Půdorys LO vz. 37 A-180 — v8.4 (čelo s ušima k nepříteli, týl s vchodem)">
-        <path d="M38,40 L282,40 L282,50 L304,50 L304,83 L278,83 L278,94 L226,215 L94,215 L42,94 L42,83 L16,83 L16,50 L38,50 Z"
+      <svg viewBox="0 0 320 255" role="img" aria-label="Půdorys LO vz. 37 A-180 — v8.5 (zakulacené uši, střílny schované za ušima)">
+        <path d="M38,40 L282,40 L282,94 L226,215 L94,215 L38,94 Z"
               fill="rgba(217,164,65,.08)" stroke="#d9a441" stroke-width="2.5" stroke-linejoin="round"/>
-        <!-- střílnové otvory na střílnových stěnách uší (boční palba) -->
-        <rect x="307" y="52" width="4" height="30" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
-        <rect x="9" y="52" width="4" height="30" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
+        <!-- uší P/L: zakulacené výstupky (polokruhy kolem bodu na stěně) -->
+        <circle cx="282" cy="68" r="18" fill="rgba(217,164,65,.14)" stroke="#d9a441" stroke-width="2"/>
+        <circle cx="38" cy="68" r="18" fill="rgba(217,164,65,.14)" stroke="#d9a441" stroke-width="2"/>
+        <path d="M38,40 L282,40 L282,94 L226,215 L94,215 L38,94 Z" fill="none" stroke="#d9a441" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- střílny: otvory v hlavní stěně ZA ušima (palba ±Y) -->
+        <rect x="282" y="52" width="18" height="4" fill="#12151a" stroke="#6b8cae" stroke-width="1.2" transform="rotate(0 282 52)"/>
+        <rect x="20" y="52" width="18" height="4" fill="#12151a" stroke="#6b8cae" stroke-width="1.2"/>
         <!-- vchod v týlu (dole) -->
         <rect x="149" y="211" width="22" height="9" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
-        <!-- šipka k nepříteli -->
-        <text x="160" y="26" text-anchor="middle" fill="#c96a5a" font-size="11">▼ NEPŘÍTEL — čelo 7,40 m (rovno) + uši střílen</text>
-        <text x="322" y="63" fill="#6b8cae" font-size="10" transform="rotate(90 322 63)">boční palba</text>
-        <text x="7" y="63" fill="#6b8cae" font-size="10" transform="rotate(-90 7 63)">boční palba</text>
+        <text x="160" y="26" text-anchor="middle" fill="#c96a5a" font-size="11">▼ NEPŘÍTEL — čelo 7,40 m (rovno) + zakulacené uši</text>
+        <text x="320" y="98" fill="#6b8cae" font-size="10">střílna ZA uchem →</text>
+        <text x="-48" y="98" fill="#6b8cae" font-size="10">← střílna ZA uchem</text>
         <text x="160" y="239" text-anchor="middle" fill="#9aa3af" font-size="11">TÝL 4,0 m · VCHOD 0,65 m (zapuštěný portálek)</text>
-        <text x="318" y="122" fill="#9aa3af" font-size="11" transform="rotate(90 318 122)">šířka přes uši 8,70 m [DENK]</text>
       </svg>
-      <p class="plan-cap">Půdorys v8.4: rovné čelo 7,40 m s ušima střílen (boční palba) k nepříteli, šikmá ramena, úzký týl 4,0 m s vchodem — orientace dle Vilda (10:59), geometrie dle řezové analýzy referenčního STL.</p>
+      <p class="plan-cap">Půdorys v8.5: rovné čelo 7,40 m se ZAKULACENÝMA ušima k nepříteli — střílny skryté v hlavní stěně za ušima (boční palba), šikmá ramena, úzký týl 4,0 m s vchodem (Vilda 11:22).</p>
     </div>
 
     <div class="panel" style="margin-top:22px">
