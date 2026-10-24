@@ -20,17 +20,17 @@ $objects_db = array(
       array('A-220', '8,70', '', false),
     ),
     'dims' => array(
-      array('Šířka týlní stěny', '8,70 m', 'kotelna/vchodová stěna; Denkschrift 1941'),
-      array('Hloubka objektu (čelo→tyl)', '5,51 m', 'půdorys dle poměrů SVG plánu (ropiky.cz)'),
-      array('Šířka čelní stěny', '6,96 m', 'lichoběžníkový půdorys, poměr 240/300'),
-      array('Tloušťka čelní stěny', '0,80 m', 'úkos čela'),
-      array('Tloušťka bočních stěn', '0,60 m', 'u střílnových šachet'),
+      array('Tvar čela', 'chevron (klin)', 'dvě sběrné stěny k centrálnímu hrotu — odraz střel'),
+      array('Šířka přes střílnová křídla', '9,20 m', 'křídla vybíhají mimo obrys těla; Denkschrift 1941'),
+      array('Šířka týlní stěny', '7,00 m', 'rovnná stěna se zapuštěným portálkem vchodu'),
+      array('Hloubka objektu (apex→tyl)', '5,80 m', 'korigováno dle Denkschrift + fotodokumentace'),
+      array('Střílny', 'boční palba', 'stěny střílen kolmé na osu — palba PODÉL linie'),
+      array('Tloušťka stěn (normální)', '0,80 m', 'zeslabené 0,60 / normální 0,80 / zesílené 1,00 m'),
       array('Světlovnitřní výška střelecké místnosti', '1,70 m', ''),
-      array('Šířka vchodu', '0,65 m', 'pancéřové dveře, typ N'),
+      array('Vchod', '0,65 m', 'pancéřové dveře, zapuštěný portálek 0,50 m'),
       array('Rozevření os střílen', '180°', 'typové označení varianty'),
-      array('Odolnost', 'normální provedení', 'zeslabené/normální/zesílené (Z/N)'),
     ),
-    'provenance' => 'Denkschrift über die tschecho-slowakische Landesbefestigung (OKH 1941) — zaměření objektů po okupaci; půdorys: ropiky.cz typologie (poměry SVG); konflikty pramenů: Denkschrift uvádí i hloubku 3,45 m u půdorysového výřezu — katalog používá celkovou hloubku objektu dle půdorysu.',
+    'provenance' => 'Denkschrift über die tschecho-slowakische Landesbefestigung (OKH 1941) — zaměření po okupaci; tvar doložen též fotodokumentací dochovaných objektů (chevronové čelo, střílny s boční palbou). Pozn.: přesné koty jednotlivých variant se mezi prameny liší — katalog korigujeme proti KST výkresům; model v4 používá sladěnou geometrii.',
   ),
   // další objekty později
 );
@@ -97,7 +97,7 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
     <div class="panel" style="margin-top:22px">
       <h2>Varianty typu A <span class="hint">— rozevření os střílen</span></h2>
       <table class="variants">
-        <tr><th>Varianta</th><th>Šířka týlu</th><th></th></tr>
+        <tr><th>Varianta</th><th>Šířka přes střílny</th><th></th></tr>
         <?php foreach ($obj['variants'] as $v): ?>
         <tr<?php if ($v[3]) echo ' class="hl"'; ?>>
           <td><?php echo $v[0]; ?></td>
@@ -106,7 +106,7 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
         </tr>
         <?php endforeach; ?>
       </table>
-      <p class="dim-note">Číslo varianty = úhel mezi osami střílen. Model A-180 parametrizovatelný na ostatní varianty změnou rozměru týlní stěny.</p>
+      <p class="dim-note">Číslo varianty = úhel mezi osami střílen. Šířky dle Denkschrift (max. přes střílnová křídla); model A-180 parametrizovatelný na ostatní varianty.</p>
     </div>
 
     <div class="panel" style="margin-top:22px">
@@ -127,26 +127,27 @@ if (!$obj) { http_response_code(404); echo "<h1>404 — objekt nenalezen</h1>"; 
   <div>
     <div class="panel plan-box">
       <h2>Půdorys <span class="hint">— schéma</span></h2>
-      <svg viewBox="0 0 300 260" role="img" aria-label="Půdorys LO vz. 37 A-180">
-        <!-- vnější obrys: lichoběžník, týl dole -->
-        <polygon points="30,230 270,230 226,60 74,60"
-                 fill="rgba(217,164,65,.08)" stroke="#d9a441" stroke-width="2.5"/>
+      <svg viewBox="0 0 320 240" role="img" aria-label="Půdorys LO vz. 37 A-180">
+        <!-- vnější obrys v4: chevronové čelo (apex nahoře), křídla střílen, týl dole -->
+        <polygon points="52,200 248,200 248,130 279,130 279,94 150,38 21,94 21,130"
+                 fill="rgba(217,164,65,.08)" stroke="#d9a441" stroke-width="2.5" stroke-linejoin="round"/>
         <!-- vnitřní světlý prostor -->
-        <polygon points="58,208 242,208 206,84 94,84"
+        <polygon points="66,196 234,196 234,138 262,138 262,98 150,50 38,98 38,138"
                  fill="none" stroke="#6b8cae" stroke-width="1.5" stroke-dasharray="5 4"/>
-        <!-- střílnové šachty (boky) -->
-        <rect x="18" y="70" width="58" height="14" transform="rotate(-24 18 70)" fill="#12151a" stroke="#d9a441" stroke-width="1.5"/>
-        <rect x="224" y="70" width="58" height="14" transform="rotate(24 224 70)" fill="#12151a" stroke="#d9a441" stroke-width="1.5"/>
-        <!-- vchod -->
-        <rect x="138" y="222" width="24" height="10" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
-        <!-- popisky -->
-        <text x="150" y="250" text-anchor="middle" fill="#9aa3af" font-size="12">vchod 0,65 m</text>
-        <text x="150" y="45" text-anchor="middle" fill="#9aa3af" font-size="12">čelo 6,96 m</text>
-        <text x="150" y="28" text-anchor="middle" fill="#9aa3af" font-size="12">← 5,51 m →</text>
-        <text x="290" y="150" text-anchor="middle" fill="#9aa3af" font-size="12" transform="rotate(90 290 150)">týl 8,70 m</text>
-        <text x="150" y="160" text-anchor="middle" fill="#6b8cae" font-size="11">střelecké místnosti</text>
+        <!-- střílnové otvory na vnějších stěnách křídel (boční palba) -->
+        <rect x="274" y="107" width="12" height="10" fill="#12151a" stroke="#6b8cae" stroke-width="1.5"/>
+        <rect x="14" y="107" width="12" height="10" fill="#12151a" stroke="#6b8cae" stroke-width="1.5"/>
+        <!-- vchod: zapuštěný portálek v týlní stěně -->
+        <rect x="141" y="190" width="18" height="12" fill="#12151a" stroke="#e8e6e3" stroke-width="1.2"/>
+        <!-- koty -->
+        <text x="150" y="24" text-anchor="middle" fill="#9aa3af" font-size="11">čelo — chevron (apex)</text>
+        <text x="286" y="118" text-anchor="middle" fill="#6b8cae" font-size="10" transform="rotate(90 286 118)">boční palba →</text>
+        <text x="34" y="118" text-anchor="middle" fill="#6b8cae" font-size="10" transform="rotate(-90 34 118)">← boční palba</text>
+        <text x="150" y="222" text-anchor="middle" fill="#9aa3af" font-size="11">týl 7,00 m · vchod 0,65 m (zapuštěný portálek)</text>
+        <text x="306" y="120" text-anchor="middle" fill="#9aa3af" font-size="11" transform="rotate(90 306 120)">šířka přes střílny 9,20 m</text>
+        <text x="8" y="120" text-anchor="middle" fill="#9aa3af" font-size="11" transform="rotate(-90 8 120)">hloubka 5,80 m</text>
       </svg>
-      <p class="plan-cap">Schematický půdorys dle poměrů z dobového plánu (ropiky.cz). Koty viz tabulka vlevo.</p>
+      <p class="plan-cap">Půdorys v4: chevronové čelo, střílnová křídla s boční palbou, zapuštěný vchod. Dle Denkschrift 1941 + fotodokumentace; koty viz tabulka vlevo.</p>
     </div>
 
     <div class="panel" style="margin-top:22px">
